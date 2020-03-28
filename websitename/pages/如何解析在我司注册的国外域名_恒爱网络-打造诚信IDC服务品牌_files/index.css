@@ -1,0 +1,1579 @@
+/***********************主 banner 开始***********************************/
+#banner {
+    z-index: 20;
+    height: 380px;
+    overflow: hidden;
+}
+#banner .slide-wrapper li {
+    width: 100%;
+    height: 380px;
+    display: block;
+}
+#banner .slide-pagination {
+    bottom: 60px;
+}
+
+/***********************主 banner 结束***********************************/
+
+
+/**********************域名查询 开始****************************/
+
+.domain-dark-container {
+    background-color: #F1F4F4;
+    z-index: 90;
+}
+
+/*域名查询区域*/
+
+.domain-query-container {
+    position: relative;
+    margin-top: -114px;
+    z-index: 90;
+}
+.domain-query-container .domain-count {
+    position: absolute;
+    top: 32px;
+    left: 18px;
+    color: #ff7200;
+    font-size: 14px;
+}
+.domain-query-container .domain-count .count {
+    font-size: 21px;
+    color: #ff7200;
+    font-weight: bold;
+    font-style: italic;
+}
+.domain-query-container .domain-count p {
+    font-size: 18px;
+}
+.query-container {
+    padding: 10px 10px 20px 184px;
+    background-color: rgba(255, 255, 255, 0.95);
+    filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000, endcolorstr=#7F000000);
+    margin-top: 0;
+    border-radius: 4px 4px 0px 0px;
+    *zoom: 1;
+}
+.adver-ext-container li {
+    float: left;
+}
+.adver-ext-container li.right{
+    float: right;
+}
+.adver-ext-container .adver-ext {
+    height: 32px;
+    line-height: 32px;
+    padding-right: 14px;
+    color: #fff;
+    font-size: 14px;
+}
+.adver-ext-container .adver-ext:hover {
+    text-decoration: underline;
+    /*color:#fd741b;*/
+}
+.adver-ext-container .adver-ext span {
+    font-size: 12px;
+}
+/*链接*/
+.adver-ext-container .adver-link {
+    height: 32px;
+    line-height: 32px;
+    padding-right: 14px;
+    color: #fff;
+    font-size: 14px;
+}
+.adver-ext-container .adver-link:hover{
+    text-decoration: underline;
+}
+.query-container .query-input-container {
+    display: block;
+    margin-right: 260px;
+    position: relative;
+    _zoom: 1;
+}
+
+/*查询输入框*/
+
+.query-container .query-input-container .common-input {
+    width: 100%;
+    display: block;
+    height: 52px;
+    line-height: 42px;
+    padding: 5px 0;
+    border-radius: 4px 0px 0px 4px;
+    border: none;
+    *border: 0;
+    font-size: 14px;
+    text-indent: 15px;
+    position: relative;
+}
+.common-input {
+    color: #000;
+}
+
+/*关闭按钮*/
+
+.query-input-container .input-wrapper .close {
+    width: 30px;
+    height: 42px;
+    background: url("/images/ie6-icon.jpg") no-repeat center right #FFF;
+    background-position: 8px -330px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    display: none;
+}
+
+/*IE6-9 才会有该class*/
+
+.placeholder {
+    color: #c9c9c9;
+}
+
+/*查询按钮*/
+
+.query-container .domain-query-btn {
+    position: absolute;
+    right: -160px;
+    top: 0;
+    *top: 1px;
+    width: 160px;
+    background: url('/images/icon.png') no-repeat 22px -76px #ff7200;
+    border-radius: 0px 4px 4px 0px;
+    height: 52px;
+    text-align: center;
+    line-height: 52px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+    border: none;
+    cursor: pointer;
+    _height: 52px;
+    _line-height: 52px;
+}
+
+/*查询按钮之后的超链接*/
+
+.query-container .pre-links {
+    position: absolute;
+    right: -260px;
+    top: 7px;
+}
+.query-container .pre-links a {
+    display: block;
+    line-height: 20px;
+    color: #pre-links;
+    font-size: 16px;
+}
+.query-container .pre-links a:hover {
+    text-decoration: underline;
+}
+.query-container .pre-links a.small {
+    font-size: 14px;
+}
+
+/*域名后缀区域*/
+
+.domext-container {
+    padding: 6px 6px;
+    border: 1px solid #eee;
+    border-top: none;
+    /*box-shadow: 0px 5px 10px #eee;*/
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.035);
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 115px;
+    z-index: 90;
+}
+.domext-wrapper {
+    height: 80px;
+    overflow: hidden;
+    _overflow: hidden;
+    _zoom: 1;
+    _clear: both;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.domext-wrapper.collapse {
+    height:80px;
+}
+.domext-wrapper label {
+    padding: 10px 0px 10px 23px;
+    line-height: 20px;
+    height: 20px;
+    font-size: 14px;
+    background: url('/images/icon.png') no-repeat 0 -325px;
+    /*IE6 该处使用插件存在问题*/
+    _background: url('/images/unselected.jpg') no-repeat left center;
+    width: 75px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    float: left;
+    color: #848484;
+    /*text-align: center;*/
+}
+.domext-wrapper label.checked {
+    background: url('/images/icon.png') no-repeat 0 -288px;
+    _background: url('/images/selected.jpg') no-repeat left center;
+}
+.domext-wrapper label input {
+    display: none;
+}
+.domext-wrapper .icon {
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: top;
+    background-image: url('/images/icon.png');
+    background-repeat: no-repeat;
+    margin-left: 3px;
+    margin-top: 1px;
+}
+.domext-wrapper .new {
+    background-position: 0 -498px;
+}
+.domext-wrapper .hot {
+    background-position: -36px -498px;
+}
+.domext-wrapper .promotion {
+    background-position: -74px -498px;
+}
+
+/*展开按钮*/
+
+.domext-container .expand-container {
+    text-align: center;
+    position: relative;
+    /*height: 50px;*/
+}
+.domext-container .expand-icon {
+    line-height: 25px;
+    height: 25px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    border: 1px solid #eee;
+    border-top: 0px solid #fff;
+    background: url('/images/icon.png') no-repeat 92px -174px #fff;
+    padding: 0 41px 0 34px;
+    /*width: 120px;*/
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    margin-left: -55px;
+    top: 6px;
+    border-radius: 0px 0px 6px 6px;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.035);
+}
+.domext-container .collapse-icon {
+    background: url('/images/icon.png') no-repeat 92px -145px #fff;
+}
+
+/*选择radio*/
+
+.domext-select-container {
+    margin: 5px 0;
+}
+.domext-select-container label {
+    vertical-align: middle;
+    padding: 5px 5px 5px 0;
+    font-size: 14px;
+    color: #72616a;
+}
+.domext-select-container label input {
+    margin-right: 3px;
+}
+
+
+/*域名价格提示信息*/
+.domext-wrapper label a {
+    /*position: relative;*/
+}
+.dm-price-tip-container {
+    line-height: 1.5em;
+    color: #666;
+    font-size: 12px;
+    position: absolute;
+    border: 1px solid #E6E6E6;
+    display: none;
+    padding: 5px 10px;
+    width: auto;
+    min-width: 130px;
+    max-width: 150px;
+    left: 50%;
+    top: 100%;
+    margin-top: 5px;
+    margin-left: -70px;
+    background-color: #fff;
+    z-index: 10;
+}
+/*.dm-price-tip-container::after {
+    content: ' ';
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background: white;
+    top: -6px;
+    left: 50%;
+    border: 1px solid #e6e6e6;
+    border-left: none;
+    border-top: none;
+    transform: rotateZ(-135deg);
+    margin-left: -5px;
+}*/
+a:hover .dm-price-tip-container {
+    display: block;
+}
+.dm-price-tip-container .domain-name {
+    font-weight: bold;
+    color: #09F;
+}
+.dm-price-tip-container .domain-price {
+    font-weight: bold;
+    color: #F60;
+    font-size: 16px;
+}
+
+/************************域名查询 结束**********************/
+
+
+/************************热销推荐 开始************************/
+
+.hotRecommend {
+    padding-top: 106px;
+    padding-bottom: 28px;
+    width: 100%;
+    background: #f1f4f4;
+}
+.hotList-title {
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+}
+.hotList-title p {
+    color: #757575;
+    font-size: 14px;
+}
+
+/*热销推荐 tab 开始*/
+
+.hotList {
+    height: 50px;
+    text-align: center;
+    width: 1030px;
+    margin: 20px auto 10px auto;
+}
+.hotList li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    float: left;
+}
+.hotList li a {
+    display: block;
+    height: 42px;
+    line-height: 42px;
+    font-size: 16px;
+    width: 165px;
+    margin-right: 6px;
+    color: #323232;
+    background-color: #fff;
+    _position: relative;
+}
+.hotList li a.last {
+    margin-right: 4px;
+}
+.hotList li a.active {
+    color: #fff;
+    background: #2087ed;
+}
+.hotList li a.active i {
+    display: block;
+    margin: 0 auto;
+    height: 6px;
+    width: 18px;
+    background: url('/images/triangle1.jpg') no-repeat;
+    _position: absolute;
+    _left: 50%;
+    _margin-left: -9px;
+    _bottom: -19px;
+}
+
+/*热销推荐 tab 结束*/
+
+
+/*热销推荐 标记帆栏 开始*/
+
+.columnList-flag-container {
+    width: 188px;
+    background-color: #f1f1f1;
+    float: left;
+    overflow: hidden;
+    height: 528px;
+    position: relative;
+}
+.columnList-flag-container .column-flag {
+    margin-right: 5px;
+    padding: 10px 34px 10px 24px;
+    height: 510px;
+    color: #fff;
+    position: absolute;
+    left: -9999px;
+}
+.columnList-flag-container .active-column-flag {
+    left: 0;
+}
+.columnList-flag-container .column-flag .title-en {
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.columnList-flag-container .column-flag .title-zh {
+    font-size: 26px;
+    padding: 10px 8px 14px 8px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: bold;
+}
+.columnList-flag-container .column-flag .title-zh a {
+    color: #fff;
+}
+.columnList-flag-container .column-flag p {
+    margin-top: 14px;
+    font-size: 14px;
+}
+.columnList-flag-container .column-flag .link-img {
+    position: absolute;
+    bottom: 118px;
+}
+.columnList-flag-container .column-flag-1 {
+    background: url('/images/column-flag-1.jpg') no-repeat;
+}
+.columnList-flag-container .column-flag-2 {
+    background: url('/images/column-flag-2.jpg') no-repeat;
+}
+.columnList-flag-container .column-flag-3 {
+    background: url('/images/column-flag-3.jpg') no-repeat;
+}
+.columnList-flag-container .column-flag-4 {
+    background: url('/images/column-flag-4.jpg') no-repeat;
+}
+.columnList-flag-container .column-flag-4 .title-en {
+    margin: 0 -8px;
+}
+.columnList-flag-container .column-flag-5 {
+    background: url('/images/column-flag-2.jpg') no-repeat;
+}
+.columnList-flag-container .column-flag-2 .title-en {
+    margin: 0 -8px;
+}
+.columnList-flag-container .column-flag-6 {
+    background: url('/images/column-flag-2.jpg') no-repeat;
+}
+.columnList-flag-container .column-flag-2 .title-en {
+    margin: 0 -8px;
+}
+.columnList-flag-container .column-flag-7 {
+    background: url('/images/column-flag-2.jpg') no-repeat;
+}
+.columnList-flag-container .column-flag-2 .title-en {
+    margin: 0 -8px;
+}
+
+
+
+
+/*热销推荐 左侧帆栏 结束*/
+
+
+/*热销推荐 详细内容 开始*/
+
+.columnList-container {
+    position: relative;
+    height: 446px;
+    float: left;
+    width: 1002px;
+}
+.columnList {
+    text-align: center;
+    opacity: 0;
+    -ms-filter: alpha(Opacity=0);
+    filter: alpha(Opacity=0);
+    cursor: pointer;
+    /*margin-top: 6px;*/
+    /*padding-top: 36px;*/
+    /*_margin-top: 0;*/
+    /*padding-bottom: 38px;*/
+    position: absolute;
+    top: 0;
+    background-color: #fff;
+    -webkit-transition: opacity 0.5s ease;
+    -moz-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+    /* 添加z-index用于防止hover到最后一个上 */
+    z-index: 10;
+}
+
+/*最新优惠图片*/
+
+.columnList .column .column-img {
+    max-width: 100%;
+    padding: 13px 0;
+    height: 100%;
+}
+
+/*激活状态*/
+
+.active-columnList {
+    opacity: 1;
+    -ms-filter: alpha(Opacity=100);
+    filter: alpha(Opacity=100);
+    z-index: 20;
+    position: relative;
+}
+.columnList li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 334px;
+    float: left;
+    _overflow: hidden;
+}
+
+/*详细内容 列*/
+
+.column {
+    position: relative;
+    border: 1px solid #eee;
+    background: #fff;
+    /*margin-left: -1px;*/
+    border-bottom: none;
+    border-right: none;
+    z-index: 1;
+}
+.column-last {
+    border-right: 1px solid #eee;
+}
+.column .hot {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 59px;
+    width: 71px;
+    background: url('/images/hot-flag.jpg') no-repeat;
+    text-align: center;
+    padding-top: 5px;
+    text-indent: 27px;
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+}
+
+/*图标翻转效果 开始*/
+
+.columnList .product-intro {
+    height: 83px;
+    padding-top: 23px;
+    display: block;
+    position: relative;
+    text-align: center;
+}
+
+/*默认情况下所有图片定位和样式*/
+
+.columnList .product-intro img {
+    position: absolute;
+    left: 50%;
+    margin-left: -41px;
+    top: 50%;
+    margin-top: -42px;
+    background-color: #fff;
+}
+.columnList .column.hover {
+    box-shadow: 4px 7px 7px rgba(208, 205, 205, 0.51);
+    margin-top: -1px;
+    z-index: 2;
+}
+
+/*图标翻转效果 结束*/
+
+.column h6 {
+    color: #333;
+    margin-top: 0px;
+    padding-bottom: 10px;
+}
+.column .star {
+    /*margin-top: 18px;*/
+    padding-bottom: 8px;
+    width: 94px;
+    height: 12px;
+    background: url(/images/icon.png) 0px -60px no-repeat;
+    border-bottom: 1px solid #bfbfbf;
+    text-align: center;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+.column .yellow-star {
+    background: url(/images/icon.png) 0px -40px no-repeat;
+    height: 100%;
+    float: left;
+}
+.column .yellow-star1 {
+    width: 13px;
+}
+.column .yellow-star2 {
+    width: 34px;
+}
+.column .yellow-star3 {
+    width: 55px;
+}
+.column .yellow-star4 {
+    width: 76px;
+}
+.column .yellow-star5 {
+    width: 97px;
+}
+.column .price {
+    font-size: 40px;
+    line-height: 40px;
+    color: #ff7200;
+    height: 40px;
+}
+.column .price .date-unit {
+    font-size: 14px;
+    color: #000;
+    font-weight: normal;
+    padding-left: 10px;
+    background: url('/images/icon.jpg') no-repeat left -566px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    height: 27px;
+    line-height: 27px;
+}
+.column .tList {
+    /*padding: 0px 35px;*/
+    margin-top: 14px;
+    width: 100%;
+    table-layout: fixed;
+}
+.column .tList tr th, .column .tList tr td {
+    height: 32px;
+    line-height: 32px;
+}
+.column .tList tr th {
+    text-align: left;
+    padding-left: 30px;
+    width: 40%;
+}
+.column .tList tr td {
+    text-align: right;
+    width: 60%;
+    padding-right: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/*列操作 按钮*/
+
+.column .btnDiv {
+    padding-top: 7px;
+    padding-bottom: 19px;
+    font-size: 0;
+}
+.column .g-common-btn {
+    height: 38px;
+    line-height: 38px;
+    width: 110px;
+    margin-right: 0;
+}
+.column .g-empty-btn {
+    margin-right: 11px;
+}
+
+/*虚拟主机样式*/
+
+.column-vhost h6 {
+    padding-top: 26px;
+    padding-bottom: 15px;
+}
+.column-vhost .price {
+    background: url('/images/cycle.png') no-repeat center center;
+    height: 100px;
+    line-height: 100px;
+    font-size: 26px;
+    z-index: 2;
+    position: relative;
+}
+.column-vhost .price span {
+    font-size: 14px;
+    font-weight: normal;
+    color: #000;
+}
+
+.column-vhost p {
+    height: 42px;
+    line-height: 42px;
+    border-bottom: 1px solid #e6e5e5;
+    margin: 0 49px;
+    color: #4d4d4d;
+}
+.column-vhost .check-more {
+    color: #1060ad;
+    padding-bottom: 14px;
+    padding-top: 10px;
+    font-family: '宋体';
+    display: block;
+}
+.column-vhost .check-more:hover {
+    color: #ff7200;
+}
+
+/*热销推荐 详细内容 结束*/
+
+
+/*最新消息 开始*/
+
+.hotRecommend .latest-news {
+    font-size: 16px;
+    color: #333;
+    height: 80px;
+    border: 1px solid #e8e8e8;
+    background-color: #f9f9f9;
+}
+
+/*标题*/
+
+.hotRecommend .latest-news .title {
+    float: left;
+    width: 130px;
+    text-align: center;
+    /* height: 80px; */
+    padding-top: 50px;
+    /*center方式 不支持 __sprite 以及相关响应式 */
+    background: url('/images/domain-info-tip.jpg') no-repeat center 12px;
+    font-size: 12px;
+}
+
+/*滚动消息*/
+
+.hotRecommend .latest-news .scroll-msg {
+    font-size: 12px;
+    height: 80px;
+    overflow: hidden;
+    color: #7a7a7a;
+}
+#J_lastestNews ul li {
+    height: 40px;
+    line-height: 40px;
+    /*list-style-type: disc;*/
+    float: left;
+}
+#J_lastestNews a {
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    border-bottom: 1px dashed #dedede;
+    width: 385px;
+    float: left;
+    margin-right: 50px;
+    _width: 380px;
+}
+#J_lastestNews a i {
+    font-style: normal;
+    float: left;
+    color: #d4d4d4;
+    width: 20px;
+    height: 40px;
+    /*background-color: red;*/
+    background-image: url('/images/disc.jpg');
+    background-repeat: no-repeat;
+    background-position: 8px 18px;
+}
+#J_lastestNews span.msg {
+    display: block;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 295px;
+    /*超出不显示*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*不换行才可能显示出...*/
+    white-space: nowrap;
+    word-break: normal;
+}
+#J_lastestNews span.date {
+    color: #b0b0b0;
+    /*font-weight: bold;*/
+    float: right;
+}
+
+/*常用工具 结束*/
+
+
+/*********************************热销推荐 结束*************************************/
+
+
+/*域名市场*/
+
+.domainMarket {
+    background: url('/images/domain-market.jpg') no-repeat #fff center top;
+    padding-top: 228px;
+    padding-bottom: 40px;
+}
+.domainMarket .domainList {
+    margin: 0 auto;
+}
+.domainList li {
+    float: left;
+    width: 380px;
+}
+.domainList li.auction {
+    margin: 0 25px;
+}
+.domainList li p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.domainList table {
+    width: 100%;
+}
+table.domain-paimai {
+    margin-top: 30px;
+    border: 1px solid #eee;
+    border-collapse: collapse;
+    text-align: center;
+    table-layout: fixed;
+    background-color: #fff;
+}
+table.domain-paimai tr th, table.domain-paimai tr td {
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #eee;
+    /*超出不显示*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*不换行才可能显示出...*/
+    white-space: nowrap;
+}
+table.domain-paimai tr th {
+    background: #f4f8fc;
+    font-size: 16px;
+    font-weight: 600;
+}
+table.domain-paimai tr td {
+    font-size: 14px;
+    vertical-align: middle;
+    padding: 0 0.5em;
+}
+table.domain-paimai tr:hover {
+    background: #fdfef4;
+}
+/*所有的超链接都设置为块  以便增大点击面*/
+table.domain-paimai a{
+    display:block;
+}
+.paimai-price a{
+    color: #fe7e00;
+    font-weight: bold;
+}
+.domainList .btnDiv {
+    padding: 12px;
+    text-align: center;
+}
+.domainList .btnDiv .txtBtn {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 140px;
+    height: 34px;
+    border: 1px solid #4a9ced;
+    border-radius: 18px;
+    font-size: 14px;
+    color: #4a9ced;
+    line-height: 34px;
+    text-align: center;
+}
+.domainList .btnDiv .txtBtn:hover {
+    background: #4a9ced;
+    color: #fff;
+}
+
+/*域名市场end*/
+
+
+/*最新活动，图片轮播*/
+
+.newActivity {
+    width: 100%;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+/*滚动容器样式*/
+
+#newActSlide {
+    padding: 25px 30px 0px 30px;
+    width: 1130px;
+    margin: 0 auto;
+}
+#newActSlide .slide-wrapper {
+    padding-bottom: 56px;
+    width: 1130px;
+}
+#newActSlide .slide-wrapper ul {
+    height: 230px;
+    overflow: hidden;
+}
+#newActSlide .slide-wrapper li {
+    display: block;
+    margin-right: 30px;
+    width: 260px;
+}
+#newActSlide .slide i {
+    display: block;
+    height: 160px;
+    background-repeat: no-repeat;
+    background-color: #efefef;
+    background-size: cover;
+    background-position: center;
+}
+
+/*活动描述信息*/
+
+#newActSlide .activity-desc {
+    height: 68px;
+    border: 1px solid #eee;
+    background-color: #fff;
+    font-size: 13px;
+    text-align: center;
+}
+#newActSlide .activity-desc span, #newActSlide .activity-desc i {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: middle;
+}
+#newActSlide .activity-desc i {
+    height: 100%;
+    width: 0;
+}
+
+/*上下页按钮样式*/
+
+#newActSlide .next, #newActSlide .prev {
+    height: 64px;
+    width: 26px;
+    _width: 25px;
+    _height: 63px;
+    margin-top: -56px;
+    -ms-filter: alpha(Opacity=100);
+    filter: alpha(Opacity=100);
+    opacity: 1;
+    zoom: 1;
+}
+#newActSlide .prev {
+    left: 0;
+    background: url(/images/icon.png) 4px -223px no-repeat #e0e0e0;
+    background: url(/images/ie6-icon.jpg) no-repeat 0 -122px;
+    /*height: 63px;*/
+}
+#newActSlide .prev:hover {
+    background: url(/images/icon.png) 4px -223px no-repeat #B5B3B3;
+    background: url(/images/ie6-icon.jpg) no-repeat -75px -122px;
+}
+#newActSlide .next {
+    right: 0;
+    width: 26px;
+    background: url(/images/icon.png) -77px -223px no-repeat #e0e0e0;
+    _background: url(/images/ie6-icon.jpg) no-repeat 0 -236px;
+}
+#newActSlide .next:hover {
+    background: url(/images/icon.png) -77px -223px no-repeat #B5B3B3;
+    _background: url(/images/ie6-icon.jpg) no-repeat -75px -236px;
+}
+
+/*分页栏位按钮样式*/
+
+#newActSlide .slide-pagination {
+    bottom: 15px;
+}
+#newActSlide .slide-pagination ul li {
+    width: 10px;
+    height: 10px;
+}
+#newActSlide .slide-pagination ul li.on {
+    width: 8px;
+    height: 8px;
+    border: solid 1px #ddd;
+    background-color: #fff;
+}
+
+/*最新活动，图片轮播end*/
+
+
+/*为什么选择武汉数据中心*/
+
+.ourAdvantage {
+    width: 100%;
+    text-align: center;
+    line-height: 1;
+}
+.ourAdvantage .edge-animation-fallback {
+    display: block;
+    height: 335px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.txtP {
+    padding-top: 24px;
+    font-size: 28px;
+    color: #067bc6;
+    line-height: normal;
+}
+.line-blue {
+    margin: 12px auto 0px;
+    width: 100px;
+    border-bottom: 4px solid #00a1e7;
+}
+.line-gray {
+    margin: 0 auto;
+    width: 600px;
+    border-bottom: 1px solid #e3e3e3;
+}
+.ourAdvantage .txt {
+    padding: 0 16px;
+    margin-top: 18px;
+    line-height: 28px;
+    font-size: 16px;
+    color: #5a5a5a;
+}
+
+/*优势列表*/
+
+.adList {
+    margin: 0 auto;
+}
+.adList li {
+    float: left;
+    display: inline;
+    width: 350px;
+    margin-top: 70px;
+    text-align: left;
+    cursor: pointer;
+    text-align: center;
+}
+.adList li.col-middle {
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+/*图片特效*/
+
+.adList li .reason_img {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 90px;
+    height: 102px;
+    background-image: url('/images/advantage.jpg');
+    background-repeat: no-repeat;
+    -webkit-transition: all .7s ease;
+    -moz-transition: all .7s ease;
+    transition: all .7s ease;
+}
+.adList li .reason_img_1 {
+    background-position: 0 0;
+}
+.adList li .reason_img_2 {
+    background-position: -202px 0;
+}
+.adList li .reason_img_3 {
+    background-position: -404px 0;
+}
+.adList li .reason_img_4 {
+    background-position: -606px 0;
+}
+.adList li .reason_img_5 {
+    background-position: -808px 0;
+}
+.adList li .reason_img_6 {
+    background-position: -1010px 0;
+}
+.adList li.hover .reason_img_1, .adList li .reason_img_1:hover {
+    background-position: 0 -215px;
+}
+.adList li.hover .reason_img_2, .adList li .reason_img_2:hover {
+    background-position: -202px -215px;
+}
+.adList li.hover .reason_img_3, .adList li .reason_img_3:hover {
+    background-position: -404px -215px;
+}
+.adList li.hover .reason_img_4, .adList li .reason_img_4:hover {
+    background-position: -606px -215px;
+}
+.adList li.hover .reason_img_5, .adList li .reason_img_5:hover {
+    background-position: -808px -215px;
+}
+.adList li.hover .reason_img_6, .adList li .reason_img_6:hover {
+    background-position: -1010px -215px;
+}
+.adList li .ad_right {
+    padding-top: 20px;
+    line-height: 30px;
+    font-size: 16px;
+    color: #363636;
+}
+
+/*我们的优势end
+
+
+/*最新公告模块*/
+
+.news {
+    margin-top: 100px;
+    background: url("/images/bg_news.png") no-repeat center top;
+}
+.newsList {
+    padding-top: 120px;
+    padding-bottom: 34px;
+}
+.newsList li {
+    float: left;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 32%;
+}
+.newsList li.middle-column {
+    margin: 0 2%;
+    *margin: 0 1%;
+}
+.newsList .newsborder {
+    border: 1px solid #eee;
+}
+.newsList .newsBg {
+    height: 52px;
+    line-height: 52px;
+    background: #0080e3;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+.newsList .newsImg {
+    margin: 0 auto;
+    padding: 20px 0 20px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+.newsList .newsImg i {
+    display: block;
+    width: 97px;
+    height: 94px;
+    margin: 0 auto;
+    background-image: url('/images/news-icon.jpg');
+    background-repeat: no-repeat;
+}
+.newsList .newsImg i.item-1 {
+    background-position: 0 0;
+}
+.newsList .newsImg i.item-2 {
+    background-position: 0 -149px;
+}
+.newsList .newsImg i.item-3 {
+    background-position: 0 -284px;
+    width: 120px;
+}
+.newsList ol {
+    display: block;
+    line-height: 30px;
+    position: relative;
+    vertical-align: top;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 25px 10px 30px 10px;
+}
+.newsList ol li {
+    display: block;
+    float: none;
+    width: auto;
+    position: relative;
+}
+.newsList ol li em {
+    margin: 11px 11px 11px 0px;
+    background-color: #ffbc5f;
+    height: 8px;
+    width: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    line-height: 0;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    _margin: 8px 11px 11px 0px;
+}
+.newsList ol li a {
+    color: #666;
+    display: block;
+    line-height: 30px;
+    padding-left: 30px;
+    padding-right: 90px;
+    *width: 150px;
+}
+.newsList ol li a:hover {
+    color: #fd741b;
+}
+.newsList ol .newsDate {
+    color: #999999;
+    position: absolute;
+    right: 0%;
+    top: 0;
+}
+.newsList .btnDiv {
+    text-align: center;
+}
+.newsList .btnDiv .txtBtn {
+    margin-top: 16px;
+    width: 140px;
+    height: 34px;
+    border: 1px solid #4a9ced;
+    border-radius: 18px;
+    font-size: 14px;
+    color: #4a9ced;
+    line-height: 34px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    text-align: center;
+}
+.newsList .btnDiv .txtBtn:hover {
+    background: #4a9ced;
+    color: #fff;
+}
+
+/*最新公告模块end*/
+
+
+/*合作伙伴*/
+
+.ourPartner {}
+.ourPartner .txtPt {
+    padding-top: 20px;
+    padding-left: 5px;
+    font-size: 20px;
+    height: 54px;
+    line-height: 54px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
+.ourPartner .txtPt .ptMore {
+    font-size: 12px;
+    color: #9c9c9c;
+    float: right;
+}
+.ourPartner .ptList {
+    height: 109px;
+    overflow: hidden;
+}
+.ourPartner .ptList li {
+    float: left;
+    width: 170px;
+    text-align: center;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    padding: 30px 0px;
+}
+.ourPartner .ptList li a img {
+    border: 1px solid #eee;
+}
+.ourPartner .ptList li a img:hover {
+    border: 1px solid #4a9ced;
+}
+
+/*合作伙伴end*/
+
+
+/************************创建业务 开始*************************/
+
+.cjyw {
+    background: url("/images/bg_agent.jpg") no-repeat center top;
+    text-align: center;
+}
+.cjyw p {
+    height: 140px;
+    line-height: 140px;
+    font-size: 24px;
+    color: #fff;
+}
+.a1, .a2 {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 180px;
+    height: 54px;
+    line-height: 54px;
+    font-size: 20px;
+    color: #fff;
+    vertical-align: middle;
+}
+.cjyw i {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+}
+a.blueColor {
+    background: #38bfef;
+}
+a.orangeColor {
+    background: #ffc16d;
+}
+a.blueColor:hover, a.orangeColor:hover {
+    color: #fff;
+}
+
+/************************创建业务 结束*******************************/
+
+
+/************************14年专注互联网服务 开始*******************************/
+
+.footer-top {
+    padding: 26px 0 34px 0;
+    width: 100%;
+    background: url("/images/bg_footer.png") no-repeat center top;
+}
+.footer-top-list {
+    /*padding-top: 24px;*/
+}
+.footer-top .footer-top-list li {
+    float: left;
+    *width: 297px;
+    padding-right: 84px;
+}
+.footer-top .footer-top-list li.pr-none {
+    padding-right: 0;
+}
+.footer-top-list .section {
+    height: 60px;
+    background: url("/images/footer-icon.png") no-repeat;
+    background-repeat: no-repeat;
+}
+.footer-top-list .section-img_1 {
+    background-position: 10px 0;
+}
+.footer-top-list .section-img_2 {
+    background-position: 0 -92px;
+}
+.footer-top-list .section-img_3 {
+    background-position: 0 -203px;
+}
+.footer-top-list .section-img_4 {
+    background-position: 10px -306px;
+}
+.footer-top-list .section .section-title {
+    padding-left: 70px;
+    padding-top: 20px;
+    font-size: 18px;
+    color: #6d6d6d;
+}
+
+/************************14年专注互联网服务 结束*******************************/
+
+
+/*<1190 则按照990px布局*/
+
+@media screen and (max-width: 1206px) {
+    /*广告域名与广告链接*/
+    .adver-ext-container .adver-ext,
+    .adver-ext-container .adver-link{
+        padding-right: 6px;
+    }
+    /*域名下拉菜单项*/
+    .domext-wrapper.collapse {
+        height: 120px;
+    }
+
+    /*热门推荐tab*/
+    /*热门推荐 列表*/
+    .columnList-container {
+        width: 801px;
+    }
+    .columnList li {
+        width: 267px;
+    }
+    /*虚拟主机样式控制*/
+    .column-vhost p {
+        margin: 0 18px;
+    }
+    .domain-tip {
+        right: 55px;
+    }
+    .hotRecommend .latest-news .title {
+        width: 70px;
+    }
+    #J_lastestNews a {
+        width: 344px;
+        _width: 339px;
+        margin-right: 20px;
+    }
+    #J_lastestNews span.msg {
+        width: 245px;
+    }
+    /*域名市场*/
+    .domainMarket .domainList {
+        width: 990px;
+    }
+    .domainList li {
+        width: 320px;
+    }
+    .domainList li.auction {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    /*最新活动滚动*/
+    #newActSlide {
+        width: 930px;
+    }
+    #newActSlide .slide-wrapper {
+        width: 930px;
+    }
+    #newActSlide .slide-wrapper li {
+        width: 216px !important;
+        margin-right: 22px;
+    }
+    /*我们的优势*/
+    .adList li {
+        width: 320px;
+    }
+    .adList li.col-middle {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    /*合作伙伴*/
+    .ourPartner .ptList li {
+        width: 165px;
+    }
+    /*底部介绍列表*/
+    .footer-top .footer-top-list li {
+        *width: 247px;
+        padding-right: 18px;
+    }
+}
+
+/***********IE6-8 responsed START*************/
+
+/*广告域名与广告链接*/
+.desktop .adver-ext-container .adver-ext,
+.desktop .adver-ext-container .adver-link{
+    padding-right: 6px;
+}
+/*域名下拉菜单项*/
+
+.desktop .domext-wrapper.collapse {
+    height: 120px;
+}
+
+/*热门推荐 列表*/
+
+.desktop .columnList-container {
+    width: 801px;
+}
+.desktop .columnList li {
+    width: 267px;
+}
+
+/*虚拟主机样式控制*/
+
+.desktop .column-vhost p {
+    margin: 0 18px;
+    color: #4c4c4c;
+}
+.desktop .domain-tip {
+    right: 55px;
+}
+/*最新消息控制*/
+
+.desktop .hotRecommend .latest-news .title {
+    width: 70px;
+}
+.desktop #J_lastestNews a {
+    width: 344px;
+    _width: 339px;
+    margin-right: 20px;
+}
+.desktop #J_lastestNews span.msg {
+    width: 245px;
+}
+
+/*域名市场*/
+
+.desktop .domainMarket .domainList {
+    width: 990px;
+}
+.desktop .domainList li {
+    width: 320px;
+}
+.desktop .domainList li.auction {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+/*最新活动滚动*/
+
+.desktop #newActSlide {
+    width: 930px;
+}
+.desktop #newActSlide .slide-wrapper {
+    width: 930px;
+}
+.desktop #newActSlide .slide-wrapper li {
+    width: 220px;
+    margin-right: 22px;
+}
+
+/*我们的优势*/
+
+.desktop .adList li {
+    width: 320px;
+}
+.desktop .adList li.col-middle {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+/*合作伙伴*/
+
+.desktop .ourPartner .ptList li {
+    width: 165px;
+}
+
+/*底部介绍列表*/
+
+.desktop #footer2016 .footer-top .footer-top-list li {
+    *width: 247px;
+    padding-right: 18px;
+}
+
+/***********IE6-8 responsed END*************/

@@ -1,0 +1,111 @@
+.news-container {
+	padding-top: 20px;
+	padding-bottom: 26px;
+	background: #f2f3f5
+}
+
+.news-container .news-box {
+	padding: 42px 42px 58px 18px;
+	background: #fff
+}
+
+.new-nav {
+	margin-right: 60px;
+	border-bottom: 1px solid #dfdfdf
+}
+
+.new-nav li {
+	width: 238px;
+	height: 58px;
+	line-height: 58px;
+	text-align: center;
+	font-size: 14px;
+	color: #757575
+}
+
+.new-nav li a {
+	display: block;
+	border: 1px solid #dfdfdf;
+	border-bottom: 0
+}
+
+.new-nav li.active a,.new-nav li a:hover {
+	color: #107fdd;
+	border-right-color: #107fdd;
+	border-right-width: 2px
+}
+
+.news-right {
+	overflow: hidden
+}
+
+.news-right .news-list {
+}
+
+.news-right .news-list li {
+	height: 44px;
+	line-height: 44px;
+	font-size: 14px;
+	color: #757575;
+	border-bottom: 1px dashed #dfdfdf;
+	position: relative
+}
+
+.news-right .news-list li {
+	display: block;
+	padding-right: 140px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-break: normal
+}
+
+.news-right .news-list li span {
+	position: absolute;
+	right: 0;
+	top: 0
+}
+
+#J_newsPagination {
+	margin-top: 50px
+}
+
+.news-content-container {
+}
+
+.news-content-container .news-title {
+	line-height: 36px;
+	border-bottom: 1px solid #f1f1f1;
+	padding-bottom: 15px;
+	color: #4a4a4a;
+	font-size: 16px;
+	text-align: center;
+	font-weight: 700
+}
+
+.news-content-container .news-content {
+	padding-top: 30px;
+		font-size: 15px;
+}
+
+.laypage_main {
+	text-align: left
+}
+
+@media screen and (max-width:1206px) {
+	.new-nav {
+		margin-right: 55px
+	}
+
+	.new-nav li {
+		width: 208px
+	}
+}
+
+.desktop .new-nav {
+	margin-right: 55px
+}
+
+.desktop .new-nav li {
+	width: 208px
+}

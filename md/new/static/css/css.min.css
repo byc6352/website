@@ -1,0 +1,278 @@
+*,:after,:before {
+	box-sizing: border-box
+}
+
+body,html {
+	position: relative;
+	height: 100%;
+	width: 100%
+}
+
+html {
+	-webkit-tap-highlight-color: transparent;
+}
+
+body {
+	background: #f5f6f7;
+	font-family: -apple-system-font,Helvetica Neue,sans-serif;
+	padding: 0;
+	font-size: 14px;
+	line-height: 1.41176471;
+	text-align: left
+}
+
+a,body {
+	color: #222
+}
+
+a {
+	text-decoration: none
+}
+
+a,button,input,select,textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	outline: 0
+}
+
+textarea {
+	resize: none;
+	vertical-align: middle
+}
+
+img {
+	border: 0;
+	border-radius: 5px
+}
+
+small {
+	font-size: 80%
+}
+
+.h5ui-msg {
+	min-height: 100%;
+	height: auto!important;
+	background: #fff;
+	overflow-y: auto;
+}
+
+.h5ui-msg_content {
+	text-align: center;
+	padding: 15px;
+	display: block
+}
+
+.h5ui-msg_content .h5ui-msg_icon {
+	width: 100px;
+	height: 100px;
+	display: block;
+	margin: 30px auto
+}
+
+.h5ui-msg_content p {
+	font-size: 14px;
+	line-height: 1.4;
+	color: #999;
+	margin-bottom: 10px;
+	margin-top: 0
+}
+
+.h5ui-msg_content .h5ui-btn {
+	margin-top: 20px
+}
+
+.h5ui-msg_error {
+	background-position: 0 -100px
+}
+
+.h5ui-msg_failure {
+	min-height: inherit;
+	background: 0 0;
+	overflow-y: auto
+}
+
+.h5ui-btn {
+	display: inline-block;
+	padding: 10px 16px;
+	font-size: 17px;
+	margin-bottom: 0;
+	font-weight: 400;
+	line-height: 1.42857143;
+	border: none;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	min-width: 140px;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	user-select: none;
+	background-image: none;
+	-webkit-appearance: none;
+	position: relative;
+	width: 100%
+}
+
+.h5ui-btn:before {
+	content: " ";
+	-webkit-transform: scale(.5);
+	transform: scale(.5);
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200%;
+	height: 200%;
+	border: 1px solid #e5e5e5;
+	border: 1px solid rgba(0,0,0,.15);
+	border-radius: 10px;
+	-webkit-border-radius: 10px
+}
+
+.h5ui-btn_primary {
+	color: #fff;
+	background-color: #469788
+}
+
+.h5ui-btn_default {
+	color: #222;
+	background-color: #f7f7f7;
+	position: relative
+}
+
+.h5ui-btn_default:active {
+	background-color: #e8e8e8
+}
+
+.h5ui-btn_default.btn-outlined {
+	background: 0 0;
+	color: #222
+}
+
+.h5ui-btn_default:before {
+	border: 1px solid rgba(0,0,0,.2)
+}
+
+.h5ui-btn_default:active {
+	background-color: #f7f7f7
+}
+
+.h5ui-tab {
+	background: #fff;
+	position: relative;
+	width: 100%;
+	display: block
+}
+
+.h5ui-tab:before {
+	content: " ";
+	-webkit-transform: scale(.5);
+	transform: scale(.5);
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200%;
+	bottom: 0;
+	height: 200%;
+	border-bottom: 1px solid #e5e5e5
+}
+
+.h5ui-tab .tab-item {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: relative;
+	margin-top: 50px
+}
+
+.h5ui-tab .tab-item a {
+	display: inline-block;
+	padding: 13px 0;
+	color: #666;
+	font-size: 16px;
+	text-align: center
+}
+
+.h5ui-tab .tab-item .active {
+	position: relative;
+	bottom: 0;
+}
+
+.h5ui-tab .tab-item .active a {
+	border-bottom: 2px solid #469788;
+	padding: 12px 0 11px;
+	color: #469788;
+	position: relative
+}
+
+.h5ui-tab .tab-item li {
+	display: table-cell;
+	width: 1%;
+	text-align: center;
+	position: relative
+}
+
+.h5ui-tab .tab-item li .badge {
+	padding: 0 4px;
+	position: relative;
+	top: -1px;
+	margin-left: 2px
+}
+
+.h5ui-tab .tab-item li small {
+	color: #999
+}
+
+.h5ui-tab .tab-fixed {
+	position: fixed!important;
+	right: 0;
+	left: 0;
+	z-index: 10
+}
+.tx-new,.tx-new li{margin: 0;padding: 0;}
+.tx-new li{list-style-type: none;position: relative;padding: 0 30% 0 0}
+.tx-new li::after{display: table;content: " ";clear: both;}
+.tx-new li a:last-child{position: absolute;right: 0;top: 0; width: 28%}
+
+@media screen and (max-width: 460px){
+    .tx-new li a span{display: none;}
+    .h5ui-btn{min-width: 80px;}
+}
+
+
+.tubiao img {
+	border: 0;
+	margin-top: 20px;
+	height: 200px;
+	width: 200px;
+	border-radius: 5px;
+}
+
+.erweima img  {
+	border: 0;
+	margin-top: 0px;
+	height: 100px;
+	width: 100px;
+	border-radius: 5px;
+}
+
+.buzhou p {
+	margin-top:20px;
+	font-size: 14px;
+	text-align: left;
+	color:#5E5E5E;
+	margin-left: 5%
+}
+.buzhou img {
+	width:90%;
+	margin-top: 0px;
+	border:solid 3px #53868B;
+}

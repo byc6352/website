@@ -1,0 +1,162 @@
+/******************全局滚动插件通用样式 开始****************************/
+
+.slide-container {
+    overflow: hidden;
+    position: relative;
+    /*IE6 下定位存在问题*/
+    _zoom: 1;
+}
+.slide-container .slide-wrapper li {
+    zoom: 1;
+    vertical-align: middle;
+    float: left;
+    /*IE6 可能存在的高度过高问题*/
+    _overflow: hidden;
+    /*width: 100%;*/
+    /*height: 479px;*/
+}
+.slide-container .slide {
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+    height: 100%;
+    /*临时用于站位*/
+    background-image: url('/js/lib/jquery.SuperSlide/images/loading.gif');
+    /*默认不显示文字*/
+    font-size: 0;
+}
+.slide-container .slide-pagination {
+    height: 16px;
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+.slide-container .slide-pagination ul {
+    overflow: hidden;
+    zoom: 1;
+    text-align: center;
+    height: 16px;
+}
+.slide-container .slide-pagination ul li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 12px;
+    height: 12px;
+    background: #9f9e9e;
+    border-radius: 16px;
+    margin: 0 4px;
+    text-indent: -99999px;
+    /*IE67 模拟实现inline-block显示 text-indent bug*/
+    *text-indent: 0;
+    font-size: 0px;
+    vertical-align: top;
+    cursor: pointer;
+}
+.slide-container .slide-pagination ul li.on {
+    width: 8px;
+    height: 8px;
+    border: solid 2px #fff;
+    background: rgba(159, 158, 158, 0.55);
+    *background: rgb(159, 158, 158);
+}
+
+/*灰色镂空圆圈*/
+
+.slide-container .gray-empty-pagination ul li {
+    border: 1px solid #d4d4d4;
+    background: #fff;
+}
+.slide-container .gray-empty-pagination ul li.on {
+    background: #d4d4d4;
+    border: 1px solid #d4d4d4;
+    width: 12px;
+    height: 12px;
+}
+.slide-container .slide-wrapper {
+    position: relative;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+/*.slide-container .slide-wrapper img {
+    width: 450px;
+    height: 230px;
+    display: block;
+}*/
+
+
+/* 下面是前/后按钮代码，如果不需要删除即可 */
+
+.slide-container .prev, .slide-container .next {
+    position: absolute;
+    left: 3%;
+    top: 50%;
+    margin-top: -25px;
+    display: block;
+    width: 32px;
+    height: 40px;
+    background: url('/js/lib/jquery.SuperSlide/images/slider-arrow.png') -110px 5px no-repeat #e0e0e0;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    /*方便贴图*/
+    _overflow: hidden;
+}
+.slide-container .next {
+    left: auto;
+    right: 3%;
+    background-position: 8px 5px;
+}
+.slide-container .prev:hover, .slide-container .next:hover {
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+.slide-container .prevStop {
+    display: none;
+}
+.slide-container .nextStop {
+    display: none;
+}
+
+/**
+ * 针对effect 效果为 fold 淡入淡出效果时  宽度无法自适应插件缺陷 补充
+ * .slide-container上添加该class
+ */
+
+.auto-size-fold .slide-wrapper ul, .auto-size-fold .slide-wrapper ul li {
+    width: 100% !important;
+}
+
+/****************全局滚动插件通用样式 结束*****************************/
+
+
+/****************顶部滚动banner风格 268 开始*****************************************************/
+
+
+/* 固定高度防止图片越界 */
+
+.slide-h-268 {
+    height: 268px;
+    overflow: hidden;
+}
+.slide-h-268 .slide-wrapper li {
+    height: 268px;
+    display: block;
+}
+/*
+.slide-container .slide-pagination-small ul li.on {
+    width: 12px;
+    height: 12px;
+    background: rgb(255, 255, 255);
+    border: none;
+}
+.slide-container .slide-pagination-small ul li {
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.3);
+}*/
+
+/****************顶部滚动banner风格 268 结束*****************************************************/

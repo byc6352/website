@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>读取文件内容</title>
+</head>
+<body>
+<div id="textarea"></div>
+<script type="javascript">
+var fso, ts, s ;
+var ForReading = 1;
+fso = new ActiveXObject("Scripting.FileSystemObject");
+ts = fso.OpenTextFile("num.txt", ForReading);
+s = ts.ReadLine();
+document.getElementById("textarea").innerHTML=s;
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+ 
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .demo {
+            width: 100%;
+            height: 100%;
+            max-width: 760px;
+        }
+        .demo img{
+            width: 100%;
+            height: 62.5%;
+        }
+    </style>
+ 
+    <body>
+        <div class="demo">
+            <img src="http://pic1.win4000.com/wallpaper/6/578855acae491.jpg"/>
+        </div>
+ 
+    </body>
+</html>
+
+
+
+可能的值
+值	描述
+none	定义无边框。
+hidden	与 "none" 相同。不过应用于表时除外，对于表，hidden 用于解决边框冲突。
+dotted	定义点状边框。在大多数浏览器中呈现为实线。
+dashed	定义虚线。在大多数浏览器中呈现为实线。
+solid	定义实线。
+double	定义双线。双线的宽度等于 border-width 的值。
+groove	定义 3D 凹槽边框。其效果取决于 border-color 的值。
+ridge	定义 3D 垄状边框。其效果取决于 border-color 的值。
+inset	定义 3D inset 边框。其效果取决于 border-color 的值。
+outset	定义 3D outset 边框。其效果取决于 border-color 的值。
+inherit	规定应该从父元素继承边框样式。
+
+
+造成html网页乱码原因主要是html源代码内中文字内容与html编码不同造成。但无论是哪种情况造成乱码在网页开始时候都需要设置网页编码。
+例如：<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+<video> 标签的属性
+属性	值	描述
+autoplay	autoplay	如果出现该属性，则视频在就绪后马上播放。
+controls	controls	如果出现该属性，则向用户显示控件，比如播放按钮。
+height	pixels	设置视频播放器的高度。
+loop	loop	如果出现该属性，则当媒介文件完成播放后再次开始播放。
+preload	preload	
+如果出现该属性，则视频在页面加载时进行加载，并预备播放。
+如果使用 "autoplay"，则忽略该属性。
+src	url	要播放的视频的 URL。
+width	pixels	设置视频播放器的宽度。

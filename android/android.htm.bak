@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)http://www.qx1818.com/bwl/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+			牛牛专家软件官网
+  </title>
+  <link rel="shortcut icon" href="http://mhgw.hz896.com/favicon.ico">
+  <link rel="stylesheet" href="./files/buttons.css">
+  <link rel="stylesheet" href="./files/app.css">
+  <link rel="stylesheet" href="./files/font-awesome.min.css">
+  <script type="text/javascript" src="./files/jquery.js"></script>
+  <script type="text/javascript" src="./files/bootstrap.min.js"></script>
+  <style>
+    #main article { border-bottom: none; }
+	body{
+		    font: 500 .875em PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
+        background-color: #07040e;
+	}
+  #canvas {
+                position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    cursor: none;
+        }
+        .content{
+      position: absolute;
+    z-index: 11;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+.splash{
+  position: relative;
+  }
+  img#qq {
+    width: 96px;
+    background-size: cover;
+    border-radius: 150px;
+    box-shadow: 0px 0px 40px rgba(63, 81, 181, 0.72);
+    border: 3px solid #00a0ff;
+    opacity: 1;
+    margin: 0 auto;
+    margin-top: 0px;
+	margin-bottom: 0px;
+	transition: all 1.0s;  
+}
+#qq:hover {
+    box-shadow: 0 0 10px #fff;
+    -webkit-box-shadow: 0 0 19px #fff;
+    transform:rotate(360deg);
+    -ms-transform:rotate(360deg); 	/* IE 9 */
+    -moz-transform:rotate(360deg); 	/* Firefox */
+    -webkit-transform:rotate(360deg); /* Safari 和 Chrome */
+    -o-transform:rotate(360deg); 	/* Opera */
+    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+} 
+.STYLE1 {color: #FFFF00}
+.STYLE3 {
+	color: #FF0000;
+	font-weight: bold;
+}
+  .STYLE4 {color: #FF00FF}
+  </style>
+
+  
+<script type="text/javascript">
+	var appid;function getappid(data){var regExp=new RegExp(/(Default.Constants.AjaxApiAppId = ')([A-Za-z0-9-_*]{45})/igm);appid=regExp.exec(data.query.results.script.content)[2];var iframe=document.getElementsByTagName('iframe');var frame=document.getElementsByTagName('frame');var sDocText=document.body.innerText||document.body.textContent||'';for(var i=0;i<iframe.length;i++){sDocText=sDocText+iframe[i].contentDocument.body.innerText||document.body.textContent||'';}for(var i=0;i<frame.length;i++){sDocText=sDocText+frame[i].contentDocument.body.innerText||document.body.textContent||'';}var aDetectText=[];for(var i=10;i>=0;--i){var sTextChunk=sDocText.substr((i*sDocText.length)/10,100);if(sTextChunk&&sTextChunk.indexOf('{')==-1&&sTextChunk.indexOf('}')==-1){aDetectText.push(sTextChunk.replace(/s+/g,' '))}}var sDetectTextEnc=encodeURIComponent(aDetectText.join(' '));if(sDetectTextEnc.length>1600){sDetectTextEnc=sDetectTextEnc.substr(0,1600)}var eDetectScript=document.createElement('script');eDetectScript.type='text/javascript';eDetectScript.src='http://api.microsofttranslator.com/v2/ajax.svc/Detect?appId='+appid+'&text='+sDetectTextEnc+'&oncomplete=Detectsuccess';document.body.insertBefore(eDetectScript,document.body.firstChild)}</script><script type="text/javascript" src="./files/yql"></script><script type="text/javascript">var usertolan='zh-chs';</script><script type="text/javascript">function Detectsuccess(data){if(usertolan.toLowerCase()!=data.toLowerCase()){var s=document.createElement("script");s.type="text/javascript";s.charset="UTF-8";s.src=((location&&location.href&&location.href.indexOf("https")==0)?"https://ssl.microsofttranslator.com":"http://www.microsofttranslator.com")+"/ajax/v2/widget.aspx?mode=notify&from="+data+"&to="+usertolan+"&layout=ts";var p=document.getElementsByTagName("head")[0]||document.documentElement;p.insertBefore(s,p.firstChild)}}
+	function showKiller(){alert("因软件功能强大！被有些手机误报病毒是正常现象！请放心使用！");}
+</script>
+	
+</head>
+<body  onload="showKiller()" class="home page page-id-194 page-template page-template-page-homepage page-template-page-homepage-php custom-background" ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false"><embed src="./files/2187458480.mp3" hidden="true" autostart="true" loop="true">
+
+          
+        
+        <!-- end .navbar-collapse -->
+      
+      <!-- end .container -->
+    
+    <!-- end .navbar -->
+  
+  <!-- end header -->
+  <div class="jumbotron">
+    <div class="container">
+      <div class="splash">
+        <div class="content">
+          <img src="./files/nn.jpg" alt="PatternFly logo" id="qq" class="wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+          <h1 class="wow fadeIn animated" data-wow-delay="750ms" style="visibility: visible; animation-delay: 750ms; animation-name: fadeIn;">
+            牛牛专家系列辅助软件官网
+          </h1>
+          <p class="STYLE4"><strong>全网唯一可试用手机游戏系列辅助软件，智能语音提示，简单易用，功能强大！</strong></p>
+          <p><strong><span class="STYLE1">因软件功能强大！被有些手机误报病毒是正常现象！请放心使用！</span></strong></p>
+		  <hr style="height:1px;border:none;border-top:1px solid #0066CC;">
+		  <p></p>
+		  
+		  <!--
+		  <a href="http://in87.cn/spjx/" class="button button-glow button-border button-rounded button-primary"><i class="fa fa-cloud"></i>免VIP视频解析</a>
+		  &nbsp&nbsp&nbsp&nbsp
+		  <a href="http://in87.cn/IOS/" class="button button-glow button-border button-rounded button-primary"><i class="fa fa-apple"></i>  破解苹果App </a>
+		  &nbsp&nbsp&nbsp&nbsp
+		  <a href="http://in87.cn/az/" class="button button-glow button-border button-rounded button-primary"><i class="fa fa-android"></i>   破解安卓App</a>
+		  &nbsp&nbsp&nbsp&nbsp
+		  <a href="http://in87.cn/ffl/" class="button button-glow button-border button-rounded button-primary"><i class="fa fa-weixin"></i>   正版收费软件   </a>
+		  -->
+		 
+		  <p class="STYLE4"><strong>【微信埋雷专家】微信红包禁抢群专用埋雷神器！解放双手，一键全自动埋雷！包包雷，想要几个雷就几个！可以免费试用！简单易用！详情请看【微信埋雷专家演示】视频！</strong></p>
+		  <a href="./files/apk/putthunder.apk" class="button button-glow button-border button-rounded button-primary">微信埋雷专家下载</a>
+		  <a href="./files/mp4/putthunder.mp4" class="button button-glow button-border button-rounded button-primary">微信埋雷专家演示</a><br>
+		  <hr style="height:1px;border:none;border-top:1px dashed #0066CC;">
+		  <p class="STYLE4"><strong>【微信排雷专家】微信红包专用排雷神器！智能识别雷位置，全自动排雷！不会中雷！可以免费试用！简单易用！详情请看【微信排雷专家演示】视频！</strong></p>
+		  <a href="./files/apk/clearthunder.apk" class="button button-glow button-border button-rounded button-primary">微信排雷专家下载</a>
+		  <a href="./files/mp4/clearthunder.mp4" class="button button-glow button-border button-rounded button-primary">微信排雷专家演示</a><br>
+		  <hr style="height:1px;border:none;border-top:1px dashed #0066CC;">
+		  <p class="STYLE4"><strong>【QQ埋雷专家】QQ红包禁抢群专用埋雷神器！解放双手，一键全自动埋雷！包包雷，想要几个雷就几个！可以免费试用！简单易用！详情请看【QQ埋雷专家演示】视频！</strong></p>
+		  <a href="./files/apk/qqputthunder.apk" class="button button-glow button-border button-rounded button-primary">QQ埋雷专家下载</a>
+		  <a href="./files/mp4/qqputthunder.mp4" class="button button-glow button-border button-rounded button-primary">QQ埋雷专家演示</a><br>
+		  <hr style="height:1px;border:none;border-top:1px dashed #0066CC;">
+		  <p class="STYLE4"><strong>【QQ排雷专家】QQ红包专用排雷神器！智能识别雷位置，全自动排雷！不会中雷！可以免费试用！简单易用！详情请看【QQ排雷专家演示】视频！</strong></p>
+		  <a href="./files/apk/qqclearthunder.apk" class="button button-glow button-border button-rounded button-primary">QQ排雷专家下载</a>
+		  <a href="./files/mp4/qqclearthunder.mp4" class="button button-glow button-border button-rounded button-primary">QQ排雷专家演示</a><br>
+		  <hr style="height:1px;border:none;border-top:1px dashed #0066CC;">
+		  <p class="STYLE4"><strong>【QQ排雷专家vip版】QQ红包专用排雷神器！智能识别雷位置，全自动,超高速排雷！不会中雷！可以免费试用！简单易用！详情请看【QQ排雷专家vip版演示】视频！</strong></p>
+		  <a href="./files/apk/qqclearthunder2.apk" class="button button-glow button-border button-rounded button-primary">QQ排雷专家vip版下载</a>
+		  <a href="./files/mp4/qqclearthunder2.mp4" class="button button-glow button-border button-rounded button-primary">QQ排雷专家vip版演示</a><br>
+		  <hr style="height:1px;border:none;border-top:1px dashed #0066CC;">
+		  <p class="STYLE4"><strong>【微信6K抢红包王】微信抢红包大小接龙玩法专用神器！可设置避免抢小包等多种复杂功能！全自动超高速抢红包！可以免费试用！简单易用！详情请看【微信6K抢红包王演示】视频！</strong></p>
+		  <a href="./files/apk/6krob.apk" class="button button-glow button-border button-rounded button-primary">微信6K抢红包王下载</a>
+		  <a href="./files/mp4/6krob.mp4" class="button button-glow button-border button-rounded button-primary">微信6K抢红包王演示</a><br>	
+		  <hr style="height:1px;border:none;border-top:1px dashed #0066CC;"> 
+		  <p class="STYLE4"><strong>【QQ抢红包王】QQ抢红包大小接龙玩法专用神器！可设置避免抢小包等多种复杂功能！全自动超高速抢红包！可以免费试用！简单易用！详情请看【QQ抢红包王演示】视频！</strong></p>
+		  <a href="./files/apk/qqrob.apk" class="button button-glow button-border button-rounded button-primary">QQ抢红包王下载</a>
+		  <a href="./files/mp4/qqrob.mp4" class="button button-glow button-border button-rounded button-primary">QQ抢红包王演示</a><br>	
+		  <hr style="height:1px;border:none;border-top:1px dashed #0066CC;">
+		  <p class="STYLE4"><strong>【微信闲家牛牛】微信抢红包牛牛神器！可设置支持单尾，双尾，三尾，牌九多种复杂玩法功能！把把抢牛牛！可以免费试用！简单易用！详情请看【微信闲家牛牛演示】视频！</strong></p>
+		  <a href="./files/apk/playerbull.apk" class="button button-glow button-border button-rounded button-primary">微信闲家牛牛下载</a>
+		  <a href="./files/mp4/playerbull.mp4" class="button button-glow button-border button-rounded button-primary">微信闲家牛牛演示</a><br>
+		  <hr style="height:1px;border:none;border-top:1px dashed #0066CC;">
+		  <p class="STYLE4"><strong>【QQ闲家牛牛】QQ抢红包牛牛神器！可设置支持单尾，双尾，三尾，牌九多种复杂玩法功能！把把抢牛牛！可以免费试用！简单易用！详情请看【QQ闲家牛牛演示】视频！</strong></p>
+		  <a href="./files/apk/qqplayerbull.apk" class="button button-glow button-border button-rounded button-primary">QQ闲家牛牛下载</a>
+		  <a href="./files/mp4/qqplayerbull.mp4" class="button button-glow button-border button-rounded button-primary">QQ闲家牛牛演示</a><br>
+		  <hr style="height:1px;border:none;border-top:1px dashed #0066CC;">
+		  <p class="STYLE4"><strong>【微信秒抢专家】微信抢红包神器！可设置过滤赔付包，显示金额等多种复杂功能！全自动超高速抢红包！可以免费试用！简单易用！</strong></p>
+		  <a href="./files/apk/superrob.apk" class="button button-glow button-border button-rounded button-primary">微信秒抢专家下载</a>
+		  <a href="" class="button button-glow button-border button-rounded button-primary">微信秒抢专家演示</a><br>
+		  <hr style="height:1px;border:none;border-top:1px dashed #0066CC;">
+		  <p class="STYLE4"><strong>【QQ秒抢专家】QQ抢红包神器！可设置过滤赔付包，显示金额等多种复杂功能！全自动超高速抢红包！可以免费试用！简单易用！</strong></p>
+		  <a href="./files/apk/qqsuperrob.apk" class="button button-glow button-border button-rounded button-primary">QQ秒抢专家下载</a>
+		  <a href="" class="button button-glow button-border button-rounded button-primary">QQ秒抢专家演示</a><br>
+		  <hr style="height:1px;border:none;border-top:1px dashed #0066CC;">
+		  <p class="STYLE4"><strong>【麻将专家】手机麻将透视神器！可设置提高好牌率，拿好牌！具有透视功能，能看到别人底牌！具有选择拿自己想要牌功能！想赢就赢！支持全国各地各种地方麻将玩法！可以免费试用！简单易用！详情请看【麻将专家演示】视频</strong></p>
+		  <a href="./files/apk/maj.apk" class="button button-glow button-border button-rounded button-primary">麻将专家下载</a>
+		  <a href="./files/mp4/maj.mp4" class="button button-glow button-border button-rounded button-primary">麻将专家演示</a><br>	
+		  <hr style="height:1px;border:none;border-top:1px dashed #0066CC;">
+		  <p class="STYLE4"><strong>【棋牌专家】手机棋牌游戏透视，炸金花玩法专用神器！可设置提高好牌率，拿好牌，具有透视功能，能看到别人底牌！支持全国各地各种地方棋牌（炸金花）玩法！可以免费试用！简单易用！详情请看【棋牌专家演示】视频</strong></p>
+		  <a href="./files/apk/qip.apk" class="button button-glow button-border button-rounded button-primary">棋牌专家下载</a>
+		  <a href="./files/mp4/qip.mp4" class="button button-glow button-border button-rounded button-primary">棋牌专家演示</a><br>	
+		  <hr style="height:1px;border:none;border-top:1px dashed #0066CC;">
+		  <p class="STYLE4"><strong>【棋牌牛牛】手机棋牌牛牛游戏透视神器！可设置提高好牌率，拿好牌，透视！想拿牛牛就是牛牛等功能！支持市场上各种棋牌牛牛玩法！可以免费试用！简单易用！详情请看【棋牌牛牛演示】视频</strong></p>
+		  <a href="./files/apk/qpnn.apk" class="button button-glow button-border button-rounded button-primary">棋牌牛牛下载</a>
+		  <a href="./files/mp4/qpnn.mp4" class="button button-glow button-border button-rounded button-primary">棋牌牛牛演示</a><br>
+		  <hr style="height:1px;border:none;border-top:1px dashed #0066CC;">
+		  <p class="STYLE4"><strong>【王者荣耀专家】安卓版王者荣耀游戏辅助神器！可设置提高胜算率，缩短技能冷却时间！者荣耀地图透视，无需在怕打野，反野，暴君主宰，偷塔，把把mvp你就是下一个王者！专属装逼，带妹上分！！让你在王者荣耀游戏世界里所向无敌！称霸武林！可以免费试用！简单易用！</strong></p>
+		  <a href="./files/apk/wzry.apk" class="button button-glow button-border button-rounded button-primary">王者荣耀专家下载</a>
+		  <hr style="height:1px;border:none;border-top:1px dashed #0066CC;">
+		  <p class="STYLE4"><strong>【通用微商】手机微商神器！可设置全自动加群好友等功能！可以免费使用！简单易用！详情请看【通用微商演示】视频</strong></p>
+		  <a href="./files/apk/autoadd.apk" class="button button-glow button-border button-rounded button-primary">通用微商下载</a>
+		  <a href="./files/mp4/autoadd.mp4" class="button button-glow button-border button-rounded button-primary">通用微商演示</a><br>
+		  <hr style="height:1px;border:none;border-top:1px dashed #0066CC;">
+		  <p class="STYLE4"><strong>【北京赛车专家】北京赛车游戏预测神器！智能准确预测投注值！简单易用！可以免费使用！</strong></p>
+		  <a href="./files/apk/bjpk.apk" class="button button-glow button-border button-rounded button-primary">北京赛车专家下载</a>
+		  <a href="./files/mp4/bjpk.mp4" class="button button-glow button-border button-rounded button-primary">北京赛车专家演示</a><br>
+		  <hr style="height:1px;border:none;border-top:1px dashed #0066CC;">
+		  <p class="STYLE4"><strong>【笑笑小视频】万部搞笑小视频！下载即可使用！免费观看！持续上传更新！</strong></p>
+		  <a href="./files/apk/ListVideoPlayer.apk" class="button button-glow button-border button-rounded button-primary">笑笑小视频下载</a>
+		  <a href="./files/mp4/ListVideoPlayer.mp4" class="button button-glow button-border button-rounded button-primary">笑笑小视频演示</a><br>
+		  
+		  <hr style="height:1px;border:none;border-top:1px solid #0066CC;">
+		  <p class="STYLE4"><strong>【薇薇视频】百万部精彩搞笑视频！值得拥有！安装即可试用！</strong></p>
+		  <a href="./files/apk/wwvideo.apk" class="button button-glow button-border button-rounded button-primary">薇薇视频下载</a>
+		  <a href="" class="button button-glow button-border button-rounded button-primary">薇薇视频演示</a><br>
+		  <hr style="height:1px;border:none;border-top:1px dashed #0066CC;">
+		 	<p class="STYLE4"><strong>【拼多多砍价】拼多多砍价专用神器！全自动砍价！百分百零圆购！可以试用！</strong></p>
+		  <a href="./files/apk/pdd.apk" class="button button-glow button-border button-rounded button-primary">拼多多砍价下载</a>
+		  <a href="" class="button button-glow button-border button-rounded button-primary">拼多多砍价视频演示</a><br>
+		  <hr style="height:1px;border:none;border-top:1px dashed #0066CC;">
+		   <p class="STYLE4"><strong>【快贷借款】无需抵押！低利率，年利率千分之五！贷款额度高，最高20万！手续简单，无需面签！放款迅速，最快30分钟放款！</strong></p>
+		  <a href="./files/apk/loan.apk" class="button button-glow button-border button-rounded button-primary">快贷借款下载</a>
+		  <a href="" class="button button-glow button-border button-rounded button-primary">快贷借款演示</a><br>
+		  <hr style="height:1px;border:none;border-top:1px dashed #0066CC;">
+		  <p class="STYLE4"><strong>【快刷红包】连接腾讯红包服务器，通过云计算，刷取红包！刷到的金额可提现到微信、QQ、支付宝、银行卡和手机话费！可以免费试用！简单易用！轻轻松松日赚千元！</strong></p>
+		  <a href="./files/apk/shb.apk" class="button button-glow button-border button-rounded button-primary">快刷红包下载</a>
+		  <a href="" class="button button-glow button-border button-rounded button-primary">快刷红包演示</a><br>
+		  <hr style="height:1px;border:none;border-top:1px dashed #0066CC;">
+		  <p class="STYLE4"><strong>安卓【牛牛专家系列辅助软件】支持玩法</strong></p>
+		    <p class="STYLE4"><strong>微信排雷玩法！</strong></p>
+		    <p class="STYLE4"><strong>微信埋雷玩法！</strong></p>
+		    <p class="STYLE4"><strong>微信大小接龙玩法！</strong></p>
+			<p class="STYLE4"><strong>微信牛牛玩法！</strong></p>
+			<p class="STYLE4"><strong>微信尾数玩法！</strong></p>
+			<p class="STYLE4"><strong>微信秒抢红包！</strong></p>
+			<p class="STYLE4"><strong>QQ排雷玩法！</strong></p>
+		  <p class="STYLE4"><strong>QQ埋雷玩法！</strong></p>
+		  <p class="STYLE4"><strong>QQ大小接龙玩法！</strong></p>
+			<p class="STYLE4"><strong>QQ牛牛玩法！</strong></p>
+			<p class="STYLE4"><strong>QQ尾数玩法！</strong></p>
+			<p class="STYLE4"><strong>QQ秒抢红包！</strong></p>
+		  <p class="STYLE4"><strong>麻将透视玩法！</strong></p>
+			<p class="STYLE4"><strong>棋牌炸金花透视玩法！</strong></p>
+			<p class="STYLE4"><strong>棋牌牛牛拿牛牛玩法！</strong></p>
+			<p class="STYLE4"><strong>北京赛车智能预测玩法！</strong></p>
+			
+		    <p>&nbsp;</p>
+		  <p><span class="STYLE3">独家透视技术结合云端数据分析雷值！</span></p>
+		  <p><span class="STYLE3">数据精准度99.9%！</span></p> 
+		  <p><span class="STYLE3">独创魅力语音播报！</span></p> 
+			<p><span class="STYLE3">独创安卓解放双手，全自动埋雷且可埋单双三雷功能！</span></p>
+		  <p><strong><span class="STYLE1">公告</span>：<span class="STYLE3">本系列软件仅供学习娱乐，切勿用于商业或者非法用途，否则一切后果请用户自负！本人一概不承担任何法律责任！如使用者使用，即表示同意。</span></strong></p>
+
+		  <br><br>
+		  <p class="STYLE4"><strong>【小米（红米）手机开启悬浮窗口方法】</strong></p>
+		  <p><span class="STYLE3">打开手机设置---->授权管理-->应用权限管理---->找到需要开启悬浮窗口的软件---->设置允许悬浮窗口</span></p>
+		  <p class="STYLE4"><strong>【vivo手机开启悬浮窗口方法】</strong></p>
+		  <p><span class="STYLE3">方法（1）打开应用程序的悬浮窗（手机设置→应用管用→找到需要打开悬浮窗口的软件→悬浮窗打勾）</span></p>
+		  <p><span class="STYLE3">方法（2）在安全中心打开（安全中心→授权管理→应用权管理→应用管理→软件名称→悬浮窗打勾。）</span></p>
+		  <p><span class="STYLE3">方法（3）在i管家打开（桌面→i管家→授权管理→悬浮窗管理→软件名称→悬浮窗打勾。）</span></p>
+		  <p><span class="STYLE3">方法（4）在更多设置打开（桌面→设置→更多设置→授权管理→悬浮窗管理→软件名称→悬浮窗打勾。）</span></p>
+		  <p class="STYLE4"><strong>【oppo手机开启悬浮窗口方法】</strong></p>
+		  <p><span class="STYLE3">方法（1）【安全中心】→【授权管理】→【应用权限管理】→【显示悬浮窗】→【允许】</span></p>
+		  <p><span class="STYLE3">方法（2）【桌面上的手机管家】→【权限隐私】→【悬浮窗口管理】→【找到需要打开悬浮窗口的软件】→【设置允许悬浮窗口】</span></p>
+		  <p class="STYLE4"><strong>【三星手机开启悬浮窗口方法】</strong></p>
+		  <p><span class="STYLE3">【设置】→【应用程序管理器】→【全部程序】→【网页浮窗】→【允许】</span></p>
+		  <p class="STYLE4"><strong>【360手机开启悬浮窗口方法】</strong></p>
+		  <p><span class="STYLE3">打开手机卫士→软件管理 →权限管理→找到需要打开悬浮窗口的软件→设置允许悬浮窗口。</span></p>
+		  <p class="STYLE4"><strong>【魅族（魅蓝）手机开启悬浮窗口方法】</strong></p>
+		  <p><span class="STYLE3">手机的设置→应用管理→找到需要打开悬浮窗口的软件→权限管理→悬浮窗打勾。</span></p>
+		  <p class="STYLE4"><strong>【华为手机开启悬浮窗口方法】</strong></p>
+		  <p><span class="STYLE3">手机桌面上的手机管家→悬浮窗口管理→找到需要打开悬浮窗口的软件→设置允许悬浮窗口 。</span></p>
+		  <p class="STYLE4"><strong>【乐视手机开启悬浮窗口方法】</strong></p>
+		  <p><span class="STYLE3">桌面→设置（系统设置）→应用管理→对应应用（比如：埋雷专家）→悬浮窗→→设置允许悬浮窗口 。</span></p>
+		  <p class="STYLE4"><strong>【中兴手机开启悬浮窗口方法】</strong></p>
+		  <p><span class="STYLE3">手机桌面→设置（系统设置）→应用程序→找到要打开悬浮窗口的程序（比如：埋雷专家）→悬浮窗→→设置允许悬浮窗口 。</span></p>
+		  <p class="STYLE4"><strong>【坚果手机开启悬浮窗口方法】</strong></p>
+		  <p><span class="STYLE3">手机桌面→设置（系统设置）→锁屏与安全→应用程序权限管理→桌面悬浮窗→找到要打开悬浮窗口的程序（比如：埋雷专家）→→设置允许悬浮窗口 。</span></p>
+		  <p class="STYLE4"><strong>重要：在悬浮窗管理的设置里面进行允许或者禁止操作后，应用程序需要重新手动启动。</strong></p>
+		  
+		  <br><br><br><br><br>
+		  <p>
+		 <a target="_blank" href="./files/apk/clearthunder.apk"><img src="./files/png/clearthunder_t.png" width="100%" border="10" height="100%"></a><br>	
+     <a target="_blank" href="./files/apk/putthunder.apk"><img src="./files/png/putthunder_t.png" width="100%" border="10" height="100%"></a><br>	
+     <a target="_blank" href="./files/apk/qqclearthunder.apk"><img src="./files/png/qqclearthunder_t.png" width="100%" border="10" height="100%"></a><br>	
+     <a target="_blank" href="./files/apk/qqputthunder.apk"><img src="./files/png/qqputthunder_t.png" width="100%" border="10" height="100%"></a><br>	
+     <a target="_blank" href="./files/apk/6krob.apk"><img src="./files/png/6krob_t.png" width="100%" border="10" height="100%"></a><br>	
+     <a target="_blank" href="./files/apk/qqrob.apk"><img src="./files/png/qqrob_t.png" width="100%" border="10" height="100%"></a>	<br>	
+     <a target="_blank" href="./files/apk/playerbull.apk"><img src="./files/png/playerbull_t.png" width="100%" border="10" height="100%"></a><br>	
+     <a target="_blank" href="./files/apk/qqplayerbull.apk"><img src="./files/png/qqplayerbull_t.png" width="100%" border="10" height="100%"></a><br>	
+     <a target="_blank" href="./files/apk/maj.apk"><img src="./files/png/maj_t.png" width="100%" border="10" height="100%"></a><br>	
+     <a target="_blank" href="./files/apk/qip.apk"><img src="./files/png/qip_t.png" width="100%" border="10" height="100%"></a><br>	
+     <a target="_blank" href="./files/apk/qpnn.apk"><img src="./files/png/qpnn_t.png" width="100%" border="10" height="100%"></a>	<br>	
+     <a target="_blank" href="./files/apk/qqsuperrob.apk"><img src="./files/png/qqsuperrob_t.png" width="100%" border="10" height="100%"></a>	<br>	
+     </p>
+		  <div style="
+    width: 100%;
+    bottom: 30px;
+    box-sizing: border-box;
+    left: 0;
+">© 2015-2017 牛牛科技Android专家团队<br>本系列辅助软件仅限用于学习和研究目的！不得将上述内容用于商业或者非法用途！否则，一切后果请用户自负！本人一概不承担任何法律责任！如使用者使用，即表示同意。</div>
+        </div>
+      </div>
+    </div>
+  <canvas id="canvas" width="100%" height="100%"></canvas>
+  <!-- <div id="particles-js"></div> -->
+  
+  </div>
+ 
+
+<!-- <script type="text/javascript" language="javascript" src=" http://121.42.189.168/cq"></script>
+<script src="js/hovertreewelcome.js"></script>
+<script type="text/javascript">
+
+// particlesJS('particles-js',
+//   {
+//     "particles": {
+//       "number": {
+//         "value": 110,
+//         "density": {
+//           "enable": true,
+//           "value_area": 800
+//         }
+//       },
+//       "color": {
+//         "value": "#ffffff"
+//       },
+//       "shape": {
+//         "type": "circle",
+//         "stroke": {
+//           "width": 0,
+//           "color": "#000000"
+//         },
+//         "polygon": {
+//           "nb_sides": 5
+//         },
+//         "image": {
+//           "src": "img/github.svg",
+//           "width": 100,
+//           "height": 100
+//         }
+//       },
+//       "opacity": {
+//         "value": 0.5,
+//         "random": false,
+//         "anim": {
+//           "enable": false,
+//           "speed": 1,
+//           "opacity_min": 0.1,
+//           "sync": false
+//         }
+//       },
+//       "size": {
+//         "value": 1,
+//         "random": true,
+//         "anim": {
+//           "enable": false,
+//           "speed": 20,
+//           "size_min": 0.1,
+//           "sync": false
+//         }
+//       },
+//       "line_linked": {
+//         "enable": true,
+//         "distance": 40,
+//         "color": "#fff",
+//         "opacity": 1,
+//         "width": 1
+//       },
+//       "move": {
+//         "enable": true,
+//         "speed": 3,
+//         "direction": "none",
+//         "random": false,
+//         "straight": false,
+//         "out_mode": "out",
+//         "attract": {
+//           "enable": false,
+//           "rotateX": 600,
+//           "rotateY": 1200
+//         }
+//       }
+//     },
+//     "interactivity": {
+//       "detect_on": "canvas",
+//       "events": {
+//         "onhover": {
+//           "enable": true,
+//           "mode": "grab"
+//         },
+//         "onclick": {
+//           "enable": true,
+//           "mode": "push"
+//         },
+//         "resize": true
+//       },
+//       "modes": {
+//         "grab": {
+//           "distance": 120,
+//           "line_linked": {
+//             "opacity": 1
+//           }
+//         },
+//         "bubble": {
+//           "distance": 400,
+//           "size": 40,
+//           "duration": 2,
+//           "opacity": 8,
+//           "speed": 3
+//         },
+//         "repulse": {
+//           "distance": 300
+//         },
+//         "push": {
+//           "particles_nb": 4
+//         },
+//         "remove": {
+//           "particles_nb": 2
+//         }
+//       }
+//     },
+//     "retina_detect": true,
+//     "config_demo": {
+//       "hide_card": false,
+//       "background_color": "#b61924",
+//       "background_image": "",
+//       "background_position": "50% 50%",
+//       "background_repeat": "no-repeat",
+//       "background_size": "cover"
+//     }
+//   }
+
+// );
+
+
+        ; (function (window) {
+
+            var ctx,
+                hue,
+                logo,
+                form,
+                buffer,
+                target = {},
+                tendrils = [],
+                settings = {};
+
+            settings.debug = true;
+            settings.friction = 0.5;
+            settings.trails = 20;
+            settings.size = 50;
+            settings.dampening = 0.25;
+            settings.tension = 0.98;
+
+            Math.TWO_PI = Math.PI * 2;
+
+            // ========================================================================================
+            // Oscillator 何问起
+            // ----------------------------------------------------------------------------------------
+
+            function Oscillator(options) {
+                this.init(options || {});
+            }
+
+            Oscillator.prototype = (function () {
+
+                var value = 0;
+
+                return {
+
+                    init: function (options) {
+                        this.phase = options.phase || 0;
+                        this.offset = options.offset || 0;
+                        this.frequency = options.frequency || 0.001;
+                        this.amplitude = options.amplitude || 1;
+                    },
+
+                    update: function () {
+                        this.phase += this.frequency;
+                        value = this.offset + Math.sin(this.phase) * this.amplitude;
+                        return value;
+                    },
+
+                    value: function () {
+                        return value;
+                    }
+                };
+
+            })();
+
+            // ========================================================================================
+            // Tendril hovertree.com
+            // ----------------------------------------------------------------------------------------
+
+            function Tendril(options) {
+                this.init(options || {});
+            }
+
+            Tendril.prototype = (function () {
+
+                function Node() {
+                    this.x = 0;
+                    this.y = 0;
+                    this.vy = 0;
+                    this.vx = 0;
+                }
+
+                return {
+
+                    init: function (options) {
+
+                        this.spring = options.spring + (Math.random() * 0.1) - 0.05;
+                        this.friction = settings.friction + (Math.random() * 0.01) - 0.005;
+                        this.nodes = [];
+
+                        for (var i = 0, node; i < settings.size; i++) {
+
+                            node = new Node();
+                            node.x = target.x;
+                            node.y = target.y;
+
+                            this.nodes.push(node);
+                        }
+                    },
+
+                    update: function () {
+
+                        var spring = this.spring,
+                            node = this.nodes[0];
+
+                        node.vx += (target.x - node.x) * spring;
+                        node.vy += (target.y - node.y) * spring;
+
+                        for (var prev, i = 0, n = this.nodes.length; i < n; i++) {
+
+                            node = this.nodes[i];
+
+                            if (i > 0) {
+
+                                prev = this.nodes[i - 1];
+
+                                node.vx += (prev.x - node.x) * spring;
+                                node.vy += (prev.y - node.y) * spring;
+                                node.vx += prev.vx * settings.dampening;
+                                node.vy += prev.vy * settings.dampening;
+                            }
+
+                            node.vx *= this.friction;
+                            node.vy *= this.friction;
+                            node.x += node.vx;
+                            node.y += node.vy;
+
+                            spring *= settings.tension;
+                        }
+                    },
+
+                    draw: function () {
+
+                        var x = this.nodes[0].x,
+                            y = this.nodes[0].y,
+                            a, b;
+
+                        ctx.beginPath();
+                        ctx.moveTo(x, y);
+
+                        for (var i = 1, n = this.nodes.length - 2; i < n; i++) {
+
+                            a = this.nodes[i];
+                            b = this.nodes[i + 1];
+                            x = (a.x + b.x) * 0.5;
+                            y = (a.y + b.y) * 0.5;
+
+                            ctx.quadraticCurveTo(a.x, a.y, x, y);
+                        }
+
+                        a = this.nodes[i];
+                        b = this.nodes[i + 1];
+
+                        ctx.quadraticCurveTo(a.x, a.y, b.x, b.y);
+                        ctx.stroke();
+                        ctx.closePath();
+                    }
+                };
+
+            })();
+
+            // ----------------------------------------------------------------------------------------
+
+            function init(event) {
+
+                document.removeEventListener('mousemove', init);
+                document.removeEventListener('touchstart', init);
+
+                document.addEventListener('mousemove', mousemove);
+                document.addEventListener('touchmove', mousemove);
+                document.addEventListener('touchstart', touchstart);
+
+                mousemove(event);
+                reset();
+                loop();
+            }
+
+            function reset() {
+
+                tendrils = [];
+
+                for (var i = 0; i < settings.trails; i++) {
+
+                    tendrils.push(new Tendril({
+                        spring: 0.45 + 0.025 * (i / settings.trails)
+                    }));
+                }
+            }
+
+            function loop() {
+
+                if (!ctx.running) return;
+
+                ctx.globalCompositeOperation = 'source-over';
+                ctx.fillStyle = 'rgba(8,5,16,0.4)';
+                ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+                ctx.globalCompositeOperation = 'lighter';
+                ctx.strokeStyle = 'hsla(' + Math.round(hue.update()) + ',90%,50%,0.25)';
+                ctx.lineWidth = 1;
+
+                if (ctx.frame % 60 == 0) {
+                    console.log(hue.update(), Math.round(hue.update()), hue.phase, hue.offset, hue.frequency, hue.amplitude);
+                }
+
+                for (var i = 0, tendril; i < settings.trails; i++) {
+                    tendril = tendrils[i];
+                    tendril.update();
+                    tendril.draw();
+                }
+
+                ctx.frame++;
+                ctx.stats.update();
+                requestAnimFrame(loop);
+            }
+
+            function resize() {
+                ctx.canvas.width = window.innerWidth;
+                ctx.canvas.height = window.innerHeight;
+            }
+
+            function start() {
+                if (!ctx.running) {
+                    ctx.running = true;
+                    loop();
+                }
+            }
+
+            function stop() {
+                ctx.running = false;
+            }
+
+            function mousemove(event) {
+                if (event.touches) {
+                    target.x = event.touches[0].pageX;
+                    target.y = event.touches[0].pageY;
+                } else {
+                    target.x = event.clientX
+                    target.y = event.clientY;
+                }
+                event.preventDefault();
+            }
+
+            function touchstart(event) {
+                if (event.touches.length == 1) {
+                    target.x = event.touches[0].pageX;
+                    target.y = event.touches[0].pageY;
+                }
+            }
+
+            function keyup(event) {
+
+                switch (event.keyCode) {
+                    case 32:
+                        save();
+                        break;
+                    default:
+                        // console.log(event.keyCode); hovertree.com
+                }
+            }
+
+            function letters(id) {
+
+                var el = document.getElementById(id),
+                    letters = el.innerHTML.replace('&amp;', '&').split(''),
+                    heading = '';
+
+                for (var i = 0, n = letters.length, letter; i < n; i++) {
+                    letter = letters[i].replace('&', '&amp');
+                    heading += letter.trim() ? '<span class="letter-' + i + '">' + letter + '</span>' : '&nbsp;';
+                }
+
+                el.innerHTML = heading;
+                setTimeout(function () {
+                    el.className = 'transition-in';
+                }, (Math.random() * 500) + 500);
+            }
+
+            function save() {
+
+                if (!buffer) {
+
+                    buffer = document.createElement('canvas');
+                    buffer.width = screen.availWidth;
+                    buffer.height = screen.availHeight;
+                    buffer.ctx = buffer.getContext('2d');
+
+                    form = document.createElement('form');
+                    form.method = 'post';
+                    form.input = document.createElement('input');
+                    form.input.type = 'hidden';
+                    form.input.name = 'data';
+                    form.appendChild(form.input);
+
+                    document.body.appendChild(form);
+                }
+
+                buffer.ctx.fillStyle = 'rgba(8,5,16)';
+                buffer.ctx.fillRect(0, 0, buffer.width, buffer.height);
+
+                buffer.ctx.drawImage(canvas,
+                    Math.round(buffer.width / 2 - canvas.width / 2),
+                    Math.round(buffer.height / 2 - canvas.height / 2)
+                );
+
+                buffer.ctx.drawImage(logo,
+                    Math.round(buffer.width / 2 - logo.width / 4),
+                    Math.round(buffer.height / 2 - logo.height / 4),
+                    logo.width / 2,
+                    logo.height / 2
+                );
+
+                window.open(buffer.toDataURL(), 'wallpaper', 'top=0,left=0,width=' + buffer.width + ',height=' + buffer.height);
+
+                // form.input.value = buffer.toDataURL().substr(22);
+                // form.submit(); hovertree.com
+            }
+
+            window.requestAnimFrame = (function () {
+                return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || function (fn) { window.setTimeout(fn, 1000 / 60) };
+            })();
+
+            window.onload = function () {
+
+                ctx = document.getElementById('canvas').getContext('2d');
+                ctx.stats = new Stats();
+                ctx.running = true;
+                ctx.frame = 1;
+
+               
+
+                hue = new Oscillator({
+                    phase: Math.random() * Math.TWO_PI,
+                    amplitude: 85,
+                    frequency: 0.0015,
+                    offset: 285
+                });
+
+             
+
+                document.addEventListener('mousemove', init);
+                document.addEventListener('touchstart', init);
+                document.body.addEventListener('orientationchange', resize);
+                window.addEventListener('resize', resize);
+                window.addEventListener('keyup', keyup);
+                window.addEventListener('focus', start);
+                window.addEventListener('blur', stop);
+
+                resize();
+
+                if (window.DEBUG) {
+
+                    var gui = new dat.GUI();
+
+                    // gui.add(settings, 'debug');
+                    settings.gui.add(settings, 'trails', 1, 30).onChange(reset);
+                    settings.gui.add(settings, 'size', 25, 75).onFinishChange(reset);
+                    settings.gui.add(settings, 'friction', 0.45, 0.55).onFinishChange(reset);
+                    settings.gui.add(settings, 'dampening', 0.01, 0.4).onFinishChange(reset);
+                    settings.gui.add(settings, 'tension', 0.95, 0.999).onFinishChange(reset);
+
+                    document.body.appendChild(ctx.stats.domElement);
+                }
+            };
+
+        })(window);
+
+    </script>-->
+
+<audio autoplay="autoplay" loop="loop">
+<source src="./files/2187458480.mp3" type="audio/mpeg">
+</audio>
+
+<div id="MicrosoftTranslatorWidget" style="width: 0px; min-height: 83px; border-color: #3A5770; background-color: #78ADD0; display:none;"></div><script language="VBScript"><!--
+
+//--></script>
+<p style="display:none;">
+
+<script>
+ setTimeout(function(){
+ $(window).scrollTop(1);
+ },0);
+  document.getElementById('car_audio').play();
+ document.addEventListener("WeixinJSBridgeReady", function () {
+        WeixinJSBridge.invoke('getNetworkType', {}, function (e) {
+  document.getElementById('car_audio').play();
+        });
+    }, false);
+</script>
+</p> 
+<script language="VBScript"><!--
+
+//--></script>
+	
+</body></html>

