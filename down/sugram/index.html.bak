@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>应用下载</title>
+<link rel="stylesheet" href="static/css/css.min.css">
+<script src="static/js/jquery.js"></script>
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+body{max-width:900px;margin:0 auto}
+.weixin-tip {display: none; position: fixed; left:0; top:0; bottom:0; background: rgba(0,0,0,0.8); filter:alpha(opacity=80);  height: 100%; width: 100%; z-index: 100;}
+.weixin-tip p{text-align: center; margin-top: 20%; padding:0 5%;}
+.weixin-tip img{width:100%;}
+</style>
+</head>
+<body>
+<div class="h5ui-msg h5ui-msg_error">
+    <div class="h5ui-msg_content">
+		<div class="tubiao"><img src="app.png" /></div>		
+		<h2>非小号</h2>
+		<div class="tab-content">
+			<p>更新于：2020-2-21 01:56:28</p>
+		</div>
+		<div class="erweima">
+		<a href="app/app.apk" class="h5ui-btn h5ui-btn_primary">安卓端下载安装</a>
+		<div class="tab-content"><br>
+			<p><img src="static/picture/wm.png" alt="扫码安装"></p>
+		</div>
+    </div>
+</div>
+	<div class="weixin-tip">
+		<p>
+			<img src="static/picture/weixin.png" alt="微信打开">
+		</p>
+	</div>
+	<script type="text/javascript">
+        $(window).on("load",function(){
+	        var winHeight = $(window).height();
+			function is_weixin() {
+			    var ua = navigator.userAgent.toLowerCase();
+			    if (ua.match(/MicroMessenger/i) == "micromessenger") {
+			        return true;
+				} else if (ua.match(/QQ/i) == "qq") {	
+					return true;
+			    } else {
+			        return false;
+			    }
+			}
+			var isWeixin = is_weixin();
+			if(isWeixin){
+				$(".weixin-tip").css("height",winHeight);
+	            $(".weixin-tip").show();
+			}
+        })
+	</script>
+</body>
+</html> 
